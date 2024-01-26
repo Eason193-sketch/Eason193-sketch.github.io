@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lazyload</title>
+    <link rel="stylesheet" type="text/css" href="css/loaders.css">
+	<style>
+		body{
+			font-family: my-font;
+		}
+	    .img_day {
+	    	display: block;
+			margin-bottom: 10px;
+			width: 300px;
+			height: 170px;
+	    }
+	    .img_bg{
+	    	height: 169px;
+	    }
+	    @font-face{
+	    	font-family: my-font;
+	    	src: url('fonts/AaRunXing-2.ttf');
+	    }
+	    .title{
+	    	font-family: my-font;
+	    }
+	    .loader{
+	    	position: fixed;
+	    	left: calc(50% - 27px);
+	    	top: calc(50vh - 27px);
+	    }
+    </style>
+</head>
+<body>
+	<div class="loader">
+	  	<div class="loader-inner ball-scale-ripple">
+	    	<div></div>
+	  	</div>
+	</div>
+
+	<div class="title">标题</div>
+	<img class = "img_day" src="" data-src="img/day1.png">
+	<img class = "img_day" src="" data-src="img/day2.png">
+	<img class = "img_day" src="" data-src="img/day3.png">
+	<img class = "img_day" src="" data-src="img/day4.png">
+	<img class = "img_day" src="" data-src="img/day5.png">
+	<img class = "img_day" src="" data-src="img/day6.png">
+	<img class = "img_day" src="" data-src="img/day7.png">
+	<img class = "img_day" src="" data-src="img/day8.png">
+	<img class = "img_day" src="" data-src="img/day9.png">
+	<img class = "img_day" src="" data-src="img/day10.png">
+	<img class = "img_day" src="" data-src="img/day11.png">
+
+	<div class="img_day img_bg" style="background-position: center; background-size: cover;" data-src="img/day12.png"></div>
+
+   	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+   
+	<script type="text/javascript">
+	   
+	   	function lazyload1() {
+   		    var images = $('img');
+   		    var images_bg = $('div.img_bg');
+   		    var len    = images.length;
+   		    var lenB   = images_bg.length;
+   		    var n1     = 0;   
+   		    var n2     = 0;   
+   		    return function() {
+	   			var windowHeight = $(window).height();
+	   			var scrollTop = $(window).scrollTop() || 0;
+	   			//images
+	   			for(var i = n1; i < len; i++) {
+	   			    if(images[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			        if(images[i].getAttribute('src') === '') {
+	   				     	images[i].src = images[i].getAttribute('data-src');
+	   					}
+	   					n1 = n1 + 1;
+	   			    }
+	   			}
+	   			//images_bg
+
+	   			for(var i = n2; i < lenB; i++) {
+	   			    if(images_bg[i].offsetTop < windowHeight + scrollTop + 300) {
+	   			        if(images_bg[i].style.backgroundImage == '') {
+	   				     	// images_bg[i].style.backgroundImage = 'url('  + images_bg[i].getAttribute('data-src') + ')';
+	   					}
+	   					n2 = n2 + 1;
+	   				}
+   		    	}
+   		    }
+   		}
+   		var loadImages = lazyload1();
+		loadImages(); 
+   		window.addEventListener('scroll', lazyload1(), false);
+		window.addEventListener('resize', lazyload1(), false);
+
+		window.onload = function(){
+			$('.loader').fadeOut(50);
+		}
+
+	</script> 
+
+
+</body>
+</html>
