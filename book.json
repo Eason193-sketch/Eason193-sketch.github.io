@@ -1,0 +1,31 @@
+{
+    "title": "书名",
+    "description": "描述",
+    "isbn": "图书编号",
+    "author": "作者",
+    "lang": "zh-cn",
+
+    "plugins": ["-lunr", "-search", "search-pro","code","expandable-chapters","back-to-top-button","flexible-alerts"],
+
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size": 1 
+        },
+        "code":{
+            "copyButtons": true,
+            "hideCopyButton": false,
+            "showLanguage:": true,
+            "hideFileName": false,
+            "showLineNumbers": true,
+            "removeTags": ["script", "style"]
+        },
+        "flexible-alerts":{
+            "style": "flat"
+        }
+    },
+
+      "variables": {
+    }
+}
