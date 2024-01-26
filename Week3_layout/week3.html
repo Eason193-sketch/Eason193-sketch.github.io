@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+	    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>BaolingUX</title>
+		<style type="text/css">
+			body{
+				font-family: PingFang SC;
+				font-size: 14px;
+				color: #333;
+				/*background: #F9F7F2; */
+				margin: 0;
+			}
+			a,
+			a:hover,
+			a:focus,
+			a:active{
+				color: #5E3F1E;
+				text-decoration: none;
+			}
+			a:hover{
+				color:#D66A44; 
+			}
+			.title-container{
+				text-align: center;
+				padding: 26px;
+				border-top: 1px solid #8B8278;
+				border-bottom: 1px solid #8B8278;
+				/*margin-bottom: 30px;*/
+			}
+			.title{
+				color: white;
+				font-size: 28px;
+				margin-bottom: 12px;
+				font-weight: bold;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.title-small{
+				color: white;
+				font-size: 16px;
+				font-weight: lighter;
+				text-align: center;
+
+			}
+			.flex{
+				display: flex;
+			}
+			.flex-around{
+				justify-content: space-around;
+			}
+			.banner{
+				width: 100%;
+				height: 240px;
+				background-image: url(imgs/banner.png);
+				background-position: center;
+				background-size: cover;
+				text-align: center;
+			}
+			.avatar{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-image: url(imgs/baoling.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			.my-logo{
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background-image: url(imgs/logo.png);
+				background-position: center;
+				background-size: cover;
+				margin: auto;
+			}
+			.banner-content{
+				padding-top: 90px;
+			}
+			.section-one{
+				width: 300px;
+				height: 160px;
+				border-radius: 6px;
+				margin: 12px;
+				/*background-image: url(imgs/visual.png);*/
+				background-position: center;
+				background-size: cover;
+				display: block;
+				position: relative;
+				border: 1px solid #ddd;
+				transition: all .2s;
+
+			}
+			.section-one:hover{
+				box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+			}
+			.container-my.flex.flex--center.no-wrap{
+				flex-wrap: nowrap;
+			}
+			#f1{
+				width: 70%; 
+				height: 120px; 
+				float: left;
+				background: #ffeebb;
+			}
+			#f2{
+				width: 30%;
+				height: 120px; 
+				float: left;
+				background-color: #bbeeff;
+			}
+			.content.flex.flex--space-around>.section-one{
+				background-color: #bbeecc;
+			}
+			.container-my.flex.flex--center>.section-one{
+				background-color: #cceeff;
+				margin: 0;
+			}
+			.container-my.flex.flex--center.no-wrap>.section-one{
+				background-color: #ffeeee;
+			}
+			
+			#e1{
+				flex: 2;
+				background-color: #ffeeee;
+			}
+			#e2{
+				width: 50px;
+				/*flex: 1;*/
+				background-color: #ddd;
+			}
+			#e3{
+				flex: 1;
+				background-color: #eeefff;
+			}
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="banner">
+			<nav class="navbar navbar-default navbar-transparent">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar" ></span>
+							<span class="icon-bar" ></span>
+							<span class="icon-bar" ></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><div class="logo" style="background-image: url(imgs/logo.png); background-position: center; background-size: cover; border-radius: 50%;"></div>BAOLING</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					    <ul class="nav navbar-nav navbar-right">
+					        <li class="active"><a href="week3.html">PORTFOLIO</a></li>
+					        <li><a href="week3.html">WRITINGS</a></li>
+					        <!-- <li><a href="#">ABOUT</a></li> -->
+					    </ul>
+					</div>
+				</div>
+			</nav>
+			<div class="banner-content">
+				<div class="title"> Baoling's Portfolio </div>
+				<div class="title-small"> 缩放一下浏览器宽度试试 </div>
+			</div>
+		</div>
+
+		<div class="container-my" style=" border-bottom: 1px solid #ddd; clear: both;">
+			F.左右两块各占百分比，宽度足够小时，隐藏右部分内容
+			<div id="f1"> F-1 </div>
+			<div id="f2"> F-2 </div>
+		</div>
+		<div class="container-my" style="clear:both; ">
+			<span>E. 左侧是右侧宽度的两倍，中间隔着一个固定50px宽度的空间</span>
+			<div class="container-my flex" style=" border-bottom: 1px solid #ddd; clear: both;">	
+				<div id="e1"> E-1 </div>
+				<div id="e2"> 50-margin </div>
+				<div id="e3"> E-2 </div>
+			</div>
+		</div>
+		<div class="content" style="clear:both; ">
+			<span>A. 固定宽度的模块，变动的间距；当浏览器宽度较小时，单个模块铺满宽度；</span>
+			<div class="content flex flex--space-around" style="border-bottom: 1px solid #ddd; padding: 10px 0; clear: both;">
+				<div class="section-one"> A-1 </div>
+				<div class="section-one"> A-2 </div>
+				<div class="section-one"> A-3 </div>
+			</div>
+		</div>
+		<div class="container-my" style="clear:both; ">
+			<span>B. 固定宽度的模块，整体永远居中；</span>
+			<div class="container-my flex flex--center" style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+				<div class="section-one"> B-1 </div>
+				<div class="section-one"> B-2 </div>
+				<div class="section-one"> B-3 </div>
+			</div>
+		</div>
+		<div class="container-my" style="clear:both; ">
+			<span>C. 永不换行的模块</span>
+			<div class="container-my flex flex--center no-wrap" style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+				<div class="section-one"> C-1 </div>
+				<div class="section-one"> C-2 </div>
+				<div class="section-one"> C-3 </div>
+			</div>
+		</div>
+		
+		
+		<!-- <div class="avatar"></div> -->
+		
+
+		
+	</body>
+
+</html>

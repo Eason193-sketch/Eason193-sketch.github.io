@@ -1,0 +1,125 @@
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.navbar{
+	border-radius: 0;
+  z-index: 999;
+}
+.container{
+  height: 1400px; 
+  background:#f9f9f9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner{
+  height: 200px;
+  background-image: url(../imgs/banner-long.png);
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+
+.navbar-default{
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.navbar-hide-top{
+  transform: translateY(-50px);
+  transition: all 0.3s;
+}
+
+.to-top{
+  width: 50px;
+  height: 50px;
+  background: white;
+  position: fixed;
+  right: 12px;
+  bottom: 60px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+@keyframes mymove
+{
+  0% {left:0px;}
+  50% {left:200px;}
+  100% {left:0px;}
+}
+
+@keyframes myrotate
+{
+  0% {transform: rotate(0deg);  
+    left:0px;
+    background:red;  
+    width: 180px;}
+  50% {transform: rotate(360deg); 
+    left:200px; 
+    background:yellow; 
+    width: 240px;}
+  100% {transform: rotate(0deg); 
+    left:0px;
+    background:red; 
+    width: 180px;}
+}
+
+.c-7{
+  animation:mymove 2s infinite;
+}
+.c-8{
+  animation:myrotate 2s 3;
+}
+
+.banner-carousel{
+  height: 200px;  
+  background-position: center;
+  background-size: cover;
+}
+.img-1{
+  background-image: url(../imgs/banner.png);
+}
+.img-2{
+  background-image: url(../imgs/blue.png);
+}
+.img-3{
+  background-image: url(../imgs/visual.png);
+}
+.carousel-control.left,.carousel-control.right{
+  background-image: none;
+}
+.arrow{
+  width: 18px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
