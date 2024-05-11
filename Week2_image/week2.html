@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type"  content="text/html; charset=utf-8">  
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Copatible" content="IE=edge">
+	    <meta name="viewport"  content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>BaolingUX</title>
+		<style type="text/css">
+			body{
+				font-family: PingFang SC;
+				font-size: 14px;
+				color: #333;
+				/*background: #F9F7F2; */
+				margin: 0;
+			}
+			a,
+			a:hover,
+			a:focus,
+			a:active{
+				color: #5E3F1E;
+				text-decoration: none;
+			}
+			a:hover{
+				color:#D66A44; 
+			}
+			.title-container{
+				text-align: center;
+				padding: 26px;
+				border-top: 1px solid #8B8278;
+				border-bottom: 1px solid #8B8278;
+				/*margin-bottom: 30px;*/
+			}
+			.title{
+				color: white;
+				font-size: 28px;
+				margin-bottom: 12px;
+				font-weight: bold;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.title-small{
+				color: white;
+				font-size: 16px;
+				font-weight: lighter;
+				text-align: center;
+
+			}
+			.flex{
+				display: flex;
+			}
+			.flex-around{
+				justify-content: space-around;
+			}
+			.banner{
+				width: 100%;
+				height: 240px;
+				background-image: url(imgs/banner.png);
+				background-position: center;
+				background-size: cover;
+				text-align: center;
+			}
+			.avatar{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-image: url(imgs/baoling.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			.my-logo{
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background-image: url(imgs/logo.png);
+				background-position: center;
+				background-size: cover;
+				margin: auto;
+			}
+			.banner-content{
+				padding-top: 40px;
+			}
+			.section-one{
+				width: 300px;
+				height: 160px;
+				border-radius: 6px;
+				margin: 12px;
+				/*background-image: url(imgs/visual.png);*/
+				background-position: center;
+				background-size: cover;
+				display: block;
+				position: relative;
+				transition: all .2s;
+			}
+			.section-one:hover{
+				box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+			}
+			.section-one.s1{
+				background-image: url(imgs/visual.png);
+			}
+			.section-one.s2{
+				/*background-image: url(imgs/visual.png);*/
+				border: 1px solid #ddd;
+				height: 130px;
+			}
+			.section-one.s3{
+				background-image: url(imgs/visual.png);
+			}
+			.section-one.s4{
+				background-image: url(imgs/visual.png);
+			}
+			.section-one.s5{
+				width: 624px;
+				height: 130px;
+				border: 1px solid #ddd;
+			}
+			.black{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(0,0,0,0.4);
+				border-radius: 6px;
+			}
+			.content{
+				max-width: 978px;
+				margin: 16px auto;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				-webkit-flex-wrap: wrap;
+			}
+			.section-img{
+				width: 100px;
+				height: 100px;
+				/*position: absolute;*/
+				margin: 16px;
+				border-radius: 4px;
+				float: left;
+			}
+			.section-txt-content{
+				padding-top: 40px;
+			}
+			.s2-title{
+				font-size: 20px;
+				margin-bottom: 6px;
+			}
+			.s2-txt{
+				color: #666;
+			}
+			.icon{
+				margin-top: 34px;
+				margin-left: 20px;
+				width: 60px;
+				height: 60px;
+				float: left;
+				border: 1px solid #ddd;
+				color: #ff0000;
+			}
+			.icon-large{
+				width: 500px;
+				height: 500px;
+			}
+			.myPhone{
+				fill:yellow;
+			}
+			.myPhone .myPhone-svg{
+				fill: red;
+				/*background-color: red;*/
+			}
+			#myWeb{
+				fill: #2B82D8;
+				transition: all .2s;
+			}
+			#myWeb-container:hover #myWeb{
+				fill: white;
+				background: #333;
+			}
+			#myWeb-container:hover{
+				/*fill: white;*/
+				background: #333;
+			}
+			/*.icon path{
+				fill: blue;
+			}*/
+			
+			#icon-path-1{
+				fill: #CAE706;
+			}
+			#icon-path-2,#icon-path-3,#icon-path-4{
+				fill: #2B82D8;
+			}
+			#hover-icon:hover #icon-path-4{
+				 fill: #2B37D8;
+			}
+			#hover-icon:hover #icon-path-3{
+				 fill: #2B37D8;
+			}
+			#hover-icon:hover #icon-path-2{
+				 fill: #2B37D8;
+			}
+			#hover-icon:hover #icon-path-1{
+				 fill: #17CC64;
+			}
+			svg{
+				fill: currentColor;
+			}
+			.icon-phone,.icon-phone-line{
+				font-size: 40px;
+				/*width: 130px;*/
+			}
+			#phone-line-hard{
+				fill: none;
+				stroke: black;
+				stroke-width: 24px;
+			}
+			#phone-line-hard-svg:hover #phone-line-hard{
+				fill: red;
+				stroke: none;
+			}
+			.change-icon{
+				background-image:url(imgs/icon-change.png); 
+				background-size: cover; 
+				background-position: 50% 100%;
+			}
+			.change-icon:hover{
+				background-position: 50% 0%;
+			}
+			.trans{
+				transition: all .2s;
+			}
+			.musicIcon{
+				width: 36px;
+				height: 36px;
+				background-image: url(imgs/music.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				position: fixed;
+				top: 24px;
+				right: 30px;
+				
+			}
+			#music{
+				margin-top: 24px;
+			}
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="banner">
+			<div class="banner-content">
+				<div class="my-logo"></div>
+				<div class="title"> Baoling's Portfolio </div>
+				<div class="title-small">  UX / UI / Motion Design</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="section-one s1">
+				<!-- <div class="black">
+					<div class="section-title"></div>
+				</div> -->
+			</div>
+			<div class="section-one s3" style="background-position: 100% 100%;"></div>
+			<div class="section-one s4" style="background-position: 0 0;"></div>
+			<div class="section-one s2">
+				<img class="section-img" src="imgs/logo.png">
+				<div class="section-txt-content">
+					<div class="s2-title"> BaolingUX </div>
+					<div class="s2-txt">  UX / UI / Motion Design </div>
+				</div>
+			</div>
+			<div class="section-one s5">
+				<!-- <img class="icon" src="imgs/collection.svg"> -->
+				<span style="text-align: left; position: absolute; left: 20px;">hover icon试试</span>
+				<!-- <img class="icon" src="imgs/follow.svg"> -->
+				<div class="icon change-icon"></div>
+				<div class="icon change-icon trans"></div>
+				
+				<!-- phone icon -->
+				<svg class="icon" id="phone-line-hard-svg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+				    <defs></defs>
+				    <g  class="myPhone-svg" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <path id="phone-line-hard" d="M920.422353,705.200596 C826.229518,644.794321 811.895826,636.398873 778.723567,641.722816 C745.585436,647.046759 735.72249,654.281861 688.045899,722.50341 C681.288587,730.898858 617.298889,831.712494 387.618534,607.117187 C219.231778,430.334982 269.09255,366.174645 300.933824,324.641066 C328.645629,298.294374 359.73609,286.622654 364.343348,239.560364 C366.322763,217.889186 363.558408,173.45474 293.664594,75.917377 C246.807072,6.262458 237.490172,0.699621 206.229071,0.051192 C174.933843,-0.597237 125.107198,15.169825 73.881313,57.215322 C23.201472,91.855078 7.570922,132.501334 2.144596,180.075541 C-3.588881,240.140537 -14.81694,443.269433 238.070345,726.974157 C490.95763,1010.67888 817.868198,1071.66533 931.752795,991.191885 C980.828627,955.698933 1020.92884,876.863625 1022.66936,826.149657 C1028.81237,791.168622 1014.61519,765.572743 920.388225,705.200596 L920.422353,705.200596 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+				    </g>
+				</svg>
+
+				<!-- link -->
+				<svg t="1537757182022" class="icon" id="myWeb-container" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6744" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+					<defs>
+						<style type="text/css"></style>
+					</defs>
+					<path id="myWeb" d="M339.536842 885.490526c-26.947368 26.947368-70.602105 26.947368-97.549474 0l-98.088421-98.088421c-26.947368-26.947368-26.947368-70.602105 0-98.088421l126.652632-126.652631 118.568421-118.568421c-52.816842-31.258947-122.341053-24.252632-167.612632 21.018947L46.349474 640.808421c-53.894737 53.894737-53.894737 141.743158 0 195.637895l146.593684 146.593684c53.894737 53.894737 141.743158 53.894737 195.637895 0l175.157894-175.157895c45.271579-45.271579 52.277895-114.795789 21.018948-167.612631L339.536842 885.490526zM983.578947 192.404211L836.985263 45.810526c-53.894737-53.894737-141.743158-53.894737-195.637895 0L466.189474 221.507368c-45.271579 45.271579-52.277895 114.256842-21.018948 167.612632l245.221053-245.221053c26.947368-26.947368 70.602105-26.947368 97.549474 0l97.549473 98.088421c26.947368 26.947368 26.947368 70.602105 0 98.088421l-245.221052 245.221053c52.816842 31.258947 122.341053 24.252632 167.612631-21.018947L983.578947 388.042105c53.894737-53.894737 53.894737-141.204211 0-195.637894z m-656.437894 485.052631l24.252631 24.252632c20.48 20.48 53.355789 20.48 73.296842 0l277.018948-277.557895c20.48-20.48 20.48-53.355789 0-73.296842l-24.252632-24.252632c-20.48-20.48-53.355789-20.48-73.296842 0l-277.018947 277.557895c-19.941053 20.48-19.941053 53.355789 0 73.296842z" fill="#A9A9A9" p-id="6745"></path>
+				</svg>
+			
+				<!-- heart -->
+				<svg t="1537755661915" class="icon" id="hover-icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2274" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+					<defs>
+						<style type="text/css"></style>
+					</defs>
+					<path id="icon-path-1" d="M608 928C379.36 760.064 262.112 606.08 256.256 466.08 247.424 254.464 465.088 194.688 608 323.616c142.912-128.96 360.576-69.152 351.744 142.464C953.888 606.08 836.64 760.064 608 928z" fill="#CAE705" p-id="2275"></path>
+					<path id="icon-path-2" d="M895.712 353.344c8.16-190.08-189.984-258.528-341.504-125.536L512 264.896 469.792 227.84C318.24 94.816 120.128 163.264 128.288 353.344c6.08 141.856 132.032 308.896 383.712 495.52 251.68-186.624 377.632-353.664 383.712-495.52zM512 928C220.992 720.096 71.776 529.44 64.32 356.096 53.088 94.112 330.144 20.064 512 179.712 693.856 20.064 970.912 94.08 959.68 356.064 952.224 529.44 803.008 720.096 512 928z" fill="#2B82D8" p-id="2276"></path>
+					<path id="icon-path-3" d="M336 400h-128a32 32 0 0 1 0-64h128a32 32 0 0 1 0 64z" fill="#2B82D8" p-id="2277"></path>
+					<path id="icon-path-4" d="M272 464a32 32 0 0 1-32-32v-128a32 32 0 0 1 64 0v128a32 32 0 0 1-32 32z" fill="#2B82D8" p-id="2278"></path>
+				</svg>
+			</div>
+
+			<video id="video0" controls style="width: 100%; height: 100%;" >
+				<source src="../video/000-intro.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<!-- <a href="javascript:playPause();"><div class="musicIcon" id="music_btn"></div></a> -->
+			<div>
+				<audio id="music" autoplay="autoplay" controls="controls" >
+					<source src="sound/mario_1.mp3" type="audio/mp3" />
+					<!-- <source src="sound/mario_1.ogg" type="audio/ogg" /> -->
+					<embed  src="sound/mario_1.mp3" />
+				</audio>
+				<!-- <audio src="sound/mario_1.mp3" controls="controls">
+					您的浏览器不支持 audio 标签。
+				</audio> -->
+			</div>
+		</div>
+		
+		
+		<!-- <div class="avatar"></div> -->
+		
+
+		
+	</body>
+
+</html>
