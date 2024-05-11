@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>主页 - 一只小螈的主页</title>
+<title>机器人导论复习 - 一只小螈的主页</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="generator" content="mkdocs-1.6.0, mkdocs-gitbook-1.0.7">
 
-<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
 <meta name="HandheldFriendly" content="true"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta rel="next" href="" />
-<link href="./css/style.min.css" rel="stylesheet">
-<link href="assets/stylesheets/extra.css" rel="stylesheet">
-<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet">
-<link href="assets/stylesheets/galaxy.css" rel="stylesheet">
+<link href="../../css/style.min.css" rel="stylesheet">
+<link href="../../assets/stylesheets/extra.css" rel="stylesheet">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet">
+<link href="../../assets/stylesheets/galaxy.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" rel="stylesheet"> 
 </head>
@@ -32,31 +32,31 @@
 <nav role="navigation">
 <ul class="summary">
 <li>
-<a href="." target="_blank" class="custom-link">一只小螈的主页</a>
+<a href="../.." target="_blank" class="custom-link">一只小螈的主页</a>
 </li>
 <li class="divider"></li>
-<li class="chapter active" data-path="">
-<a href=".">主页</a>
+<li class="chapter" data-path="">
+<a href="../..">主页</a>
 <li class="header">技术文档</li>
 
 <li>
-<a href="%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mkdocs/" class="">mkdocs</a>
+<a href="../../%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/mkdocs/" class="">mkdocs</a>
 </li>
 
 <li>
-<a href="%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/PX4/" class="">PX4仿真ego-planner</a>
+<a href="../../%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3/PX4/" class="">PX4仿真ego-planner</a>
 </li>
 
 <li class="header">MATHE</li>
 
 <li>
-<a href="MATHE/ch1_calculus/" class="">Calculus</a>
+<a href="../../MATHE/ch1_calculus/" class="">Calculus</a>
 </li>
 
 <li class="header">Robotics</li>
 
 <li>
-<a href="Robotics/%E9%A9%B1%E5%8A%A8%E8%A3%85%E7%BD%AE/" class="">驱动装置</a>
+<a href="../%E9%A9%B1%E5%8A%A8%E8%A3%85%E7%BD%AE/" class="">驱动装置</a>
 </li>
 
 <li class="divider"></li>
@@ -97,16 +97,38 @@ Theme by GitBook
 
 
 
-<h1 id="welcome-to-my-page">Welcome to My Page<a class="headerlink" href="#welcome-to-my-page" title="点击此处可置顶内容">&para;</a></h1>
-<p>Hi, 我来自控制科学与工程学院，欢迎来到我的主页</p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="点击此处可置顶内容">&para;</a></h2>
-<p>本主页包括以下内容：</p>
-<h3 id="_1">技术文档<a class="headerlink" href="#_1" title="点击此处可置顶内容">&para;</a></h3>
-<p>主要记录自己在实操中的路径，希望能让后来者少踩坑qaq</p>
-<h3 id="mathe">MATHE<a class="headerlink" href="#mathe" title="点击此处可置顶内容">&para;</a></h3>
-<p>记录一些最最“基础”的理论或工科数学知识</p>
-<h3 id="robotics">Robotics<a class="headerlink" href="#robotics" title="点击此处可置顶内容">&para;</a></h3>
-<p>记录有关硬件选型等的内容</p>
+<h1 id="_1">机器人导论复习<a class="headerlink" href="#_1" title="点击此处可置顶内容">&para;</a></h1>
+<p>必考</p>
+<ul>
+<li>什么是机器人：人造的机器，人类的特性（体能、智能)</li>
+<li>智能：依赖感觉器官和神经束实现刺激-反应行为</li>
+<li>传感器：什么是传感器，反馈的是什么信号，使用什么传感器,放在什么位置</li>
+<li>定量感知环境/本体的器件，并处理物理量等</li>
+<li>成本</li>
+<li>重要的传感器:码盘（<strong>测量角位移</strong> 的数字编码器）,加速度计（对力的测量) 、激光测距、陀螺仪（测量、控制物体在相对惯性空间中的<strong>角运动</strong>）、惯性测量单元</li>
+<li>增量式光编码器、速度传感器：脉冲频率</li>
+<li>加速度传感器：MEMS</li>
+<li>IMU：卡尔曼滤波</li>
+<li>超声波传感器：平整的对象</li>
+<li>激光传感器：激光点云是什么,ICP；三角法激光测距</li>
+<li>时飞法：</li>
+<li>
+<p>嵌入式系统：</p>
+</li>
+<li>
+<p>冯结构、？结构</p>
+</li>
+<li>
+<p>各种结构</p>
+</li>
+<li>
+<p>arduino基本逻辑</p>
+</li>
+<li>PWM输出</li>
+<li>占空比</li>
+<li>路径规划 <span class="arithmatex">\(A^*\)</span>等知道基本概念即可</li>
+<li>电机的种类、调速</li>
+</ul>
 
 
 </section>
@@ -132,19 +154,19 @@ Theme by GitBook
 </div> <!-- end of body-inner -->
 
 </div> <!-- end of book-body -->
-<script src="./js/main.js"></script>
-<script src="assets/javascripts/katex.js"></script>
-<script src="assets/javascripts/mathjax.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../assets/javascripts/katex.js"></script>
+<script src="../../assets/javascripts/mathjax.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="assets/javascripts/titlechange.js"></script>
-<script src="assets/javascripts/glightbox.min.js"></script>
-<script src="assets/javascripts/click.js"></script>
-<script src="assets/javascripts/galaxy.js"></script>
-<script src="search/main.js"></script>
-<script src="./js/gitbook.min.js"></script>
-<script src="./js/theme.min.js"></script>
+<script src="../../assets/javascripts/titlechange.js"></script>
+<script src="../../assets/javascripts/glightbox.min.js"></script>
+<script src="../../assets/javascripts/click.js"></script>
+<script src="../../assets/javascripts/galaxy.js"></script>
+<script src="../../search/main.js"></script>
+<script src="../../js/gitbook.min.js"></script>
+<script src="../../js/theme.min.js"></script>
 </body>
 </html>
