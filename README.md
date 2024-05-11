@@ -1,1 +1,3 @@
-Welcome to my page! I'm a student frome the Control Science and Engineering College in ZheJinag University. Wish you a nice visit!
+# MkDocs基于Material主题的网站
+
+你只需要前往该网站所在的仓库，使用此模板即可快速搭建MkDocs
