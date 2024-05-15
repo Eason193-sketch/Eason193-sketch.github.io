@@ -1,0 +1,2577 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>markdown的使用说明 - 一只小螈的主页</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/glightbox.min.css">
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/galaxy.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markdown" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="一只小螈的主页" class="md-header__button md-logo" aria-label="一只小螈的主页" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            一只小螈的主页
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              markdown的使用说明
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="一只小螈的主页" class="md-nav__button md-logo" aria-label="一只小螈的主页" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    一只小螈的主页
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    学习资源
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            学习资源
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/resource/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    链接
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    技术文档
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            技术文档
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Typora.pdf" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    typora
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mkdocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PX4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PX4仿真ego-planner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Language
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Language/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MATHE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            MATHE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MATHE/Introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MATHE/ch1_calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Robotics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Robotics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/note/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    笔记
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Robotics/test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    考试复习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、标题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="markdown">markdown的使用说明<a class="headerlink" href="#markdown" title="点击此处可置顶内容">¶</a></h1>
+<h2 id="_1">一、标题<a class="headerlink" href="#_1" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>语法：# (一级标题)  ## (二级标题)  ### (三级标题) ......</p>
+<p>代码：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># 这是一级标题
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>## 这是二级标题
+</span></code></pre></div>
+<p>效果:  </p>
+<h1 id="_2">这是一级标题<a class="headerlink" href="#_2" title="点击此处可置顶内容">¶</a></h1>
+<h2 id="_3">这是二级标题<a class="headerlink" href="#_3" title="点击此处可置顶内容">¶</a></h2>
+<p>快捷键:</p>
+<ul>
+<li>Ctrl+数字1~6可以快速将选中的文本调成对应级别的标题</li>
+<li>Ctrl+0可以快速将选中的文本调成普通文本</li>
+<li>Ctrl+加号/减号对标题级别进行加减</li>
+</ul>
+</blockquote>
+<h2 id="_4">二、段落<a class="headerlink" href="#_4" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1">1、换行<a class="headerlink" href="#1" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:<br>
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>这是一个段落
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>这是一个段落
+</span></code></pre></div>
+<p>效果: </p>
+<p>这是一个段落
+这是一个段落</p>
+</blockquote>
+<h3 id="2">2、分割线<a class="headerlink" href="#2" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>语法:  ---或者<em>*</em>+回车</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---或者***
+</span></code></pre></div>
+<p>效果:</p>
+<hr>
+</blockquote>
+<h2 id="_5">三、文字显示<a class="headerlink" href="#_5" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_1">1、字体<a class="headerlink" href="#1_1" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>语法:</p>
+<ul>
+<li>粗体:  用一对双星号包裹</li>
+<li>删除线:  用一对双飘号包裹</li>
+<li>下划线:  用一对u标签包裹</li>
+<li>斜体:  用一对单星号包裹</li>
+<li>高亮:  用一对双等号包裹</li>
+</ul>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>**这是粗体**
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>~~这是删除线~~
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>&lt;u&gt;这是下划线&lt;/u&gt;
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>*这是斜体*
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>==这是高亮==
+</span></code></pre></div>
+<p>效果:
+<strong>这是粗体</strong>
+<del>这是删除线</del>
+<u>这是下划线</u>
+<em>这是斜体</em>
+<mark>这是高亮</mark></p>
+<p>快捷键:
+* 加粗:  Ctrl+B
+* 删除线:  Shift+Alt+5
+* 下划线:  Ctrl+U
+* 斜体:  Ctrl+I</p>
+</blockquote>
+<h3 id="2_1">2、上下标<a class="headerlink" href="#2_1" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>x^2^
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>H~2~O
+</span></code></pre></div>
+<p>效果:
+x<sup>2</sup>
+H<sub>2</sub>O</p>
+</blockquote>
+<h2 id="_6">四、列表<a class="headerlink" href="#_6" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_2">1、无序列表<a class="headerlink" href="#1_2" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>*/-/+ +空格
+</span></code></pre></div>
+<p>效果:
+1.只有同一级别:</p>
+<ul>
+<li>苹果</li>
+<li>香蕉</li>
+<li>橘子</li>
+</ul>
+<p>2.子集类:</p>
+<ul>
+<li>一级分类</li>
+<li>二级分类 <ul>
+<li>三级分类</li>
+</ul>
+</li>
+</ul>
+<p>快捷键:  Ctrl+Shift+]</p>
+</blockquote>
+<h3 id="2_2">2、有序列表<a class="headerlink" href="#2_2" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>数字+.+空格
+</span></code></pre></div>
+<p>效果:
+1. 第一个标题
+2. 第二个标题
+3. 第三个标题</p>
+<div class="language-text highlight"><pre><span></span><code>* 子内容1
+* 子内容2
+</code></pre></div>
+<ol>
+<li>第四个标题</li>
+</ol>
+<p>快捷键:  Ctrl+Shift+[</p>
+</blockquote>
+<h3 id="3">3、任务列表<a class="headerlink" href="#3" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>- [ ] 吃早餐
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>- [x] 背单词
+</span></code></pre></div>
+<p>效果:
+- [ ] 吃早餐
+- [x] 背单词</p>
+</blockquote>
+<h2 id="_7">五、区块显示<a class="headerlink" href="#_7" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&gt;+回车
+</span></code></pre></div>
+<p>效果:</p>
+<blockquote>
+<p>这是最外层区块</p>
+<blockquote>
+<p>这是内层区块</p>
+<blockquote>
+<p>这是最内层区块</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="_8">六、代码显示<a class="headerlink" href="#_8" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_3">1、行内代码<a class="headerlink" href="#1_3" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>`int a=0;`（说明：`位于Esc下面）
+</span></code></pre></div>
+<p>效果:
+<code>int a=0;</code></p>
+<p>快捷键:  Ctrl+Shift+`</p>
+</blockquote>
+<h3 id="2_3">2、代码块<a class="headerlink" href="#2_3" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>```js/java/c#/text
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>内容
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>```
+</span></code></pre></div>
+<p>快捷键:  Ctrl+Shift+K</p>
+</blockquote>
+<h2 id="_9">七、链接<a class="headerlink" href="#_9" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>www.baidu.com
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>[百度一下](https://www.baidu.com)
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>[百度一下](https://www.baidu.com "https://www.baidu.com")
+</span></code></pre></div>
+<p>效果:
+www.baidu.com
+<a href="https://www.baidu.com">百度一下</a>
+<a href="https://www.baidu.com" title="https://www.baidu.com">百度一下</a></p>
+<p>快捷键:  Ctrl+K</p>
+</blockquote>
+<h2 id="_10">八、脚注<a class="headerlink" href="#_10" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>说明:  对文本进行解释说明。</p>
+<p>代码: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>[^文本]
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>[^文本]:解释说明
+</span></code></pre></div>
+<p>效果:
+这是一个技术<sup id="fnref:①"><a class="footnote-ref" href="#fn:%E2%91%A0">1</a></sup></p>
+</blockquote>
+<h2 id="_11">九、图片插入<a class="headerlink" href="#_11" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>![不显示的文字](图片路径 "图片标题")
+</span></code></pre></div>
+<p>效果:
+<img alt="This is a picture" src="C:\Users\asus\Pictures\Saved%20Pictures\Snipaste_2020-09-03_13-19-11.png" title="漫步图"></p>
+<p>(注：效果路径为C:\Users\asus\Pictures\Saved Pictures\Snipaste_2020-09-03_13-19-11.png。在其他电脑上可能不显示。)</p>
+<p>快捷键:  Ctrl+Shift+I</p>
+</blockquote>
+<h2 id="_12">十、表格<a class="headerlink" href="#_12" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>|  1   |  2   |  3   |
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>| :--- | :--: | ---: |
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>|  4   |  5   |  6   |
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>|  7   |  8   |  9   |
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>|  10  |  11  |  12  |
+</span></code></pre></div>
+<p>效果:</p>
+<table>
+<thead>
+<tr>
+<th>1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: right;">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>10</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+<p>快捷键:  Ctrl+T</p>
+</blockquote>
+<h2 id="_13">十一、流程图<a class="headerlink" href="#_13" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_4">1、横向流程图<a class="headerlink" href="#1_4" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>```mermaid
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>graph LR
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>A[方形]==&gt;B(圆角)
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>B==&gt;C{条件a}
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>C--&gt;|a=1|D[结果1]
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>C--&gt;|a=2|E[结果2]
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>F[横向流程图]
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>```
+</span></code></pre></div>
+<p>效果:
+</p><pre class="mermaid"><code>graph LR
+A[方形]==&gt;B(圆角)
+B==&gt;C{条件a}
+C--&gt;|a=1|D[结果1]
+C--&gt;|a=2|E[结果2]
+F[横向流程图]</code></pre>
+</blockquote>
+<h3 id="2_4">2、竖向流程图<a class="headerlink" href="#2_4" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+<code>`text</code>mermaid
+graph TD
+A[方形]<mark>&gt;B(圆角)
+B</mark>&gt;C{条件a}
+C→|a=1|D[结果1]
+C→|a=2|E[结果2]
+F[竖向流程图]
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>````
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>效果:
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>```mermaid
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>graph TD
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>A[方形]==&gt;B(圆角)
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>B==&gt;C{条件a}
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>C--&gt;|a=1|D[结果1]
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>C--&gt;|a=2|E[结果2]
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>F[竖向流程图]
+</span></code></pre></div>
+</blockquote>
+<h2 id="_14">十二、表情符号<a class="headerlink" href="#_14" title="点击此处可置顶内容">¶</a></h2>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>:happy:、:cry:、:man:
+</span></code></pre></div>
+<p>效果:
+:happy:、 :cry:、 :man:</p>
+</blockquote>
+<h2 id="_15">十三、数学公式的输入<a class="headerlink" href="#_15" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_5">1、公式的插入<a class="headerlink" href="#1_5" title="点击此处可置顶内容">¶</a></h3>
+<h4 id="1_6">①行中公式<a class="headerlink" href="#1_6" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>$公式$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(公式\)</span></p>
+</blockquote>
+<h4 id="2_5">②独立公式<a class="headerlink" href="#2_5" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>$$
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>公式
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+公式
+$$</p>
+</blockquote>
+<h3 id="2_6">2、上下标<a class="headerlink" href="#2_6" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>$x^{y^z}=(1+e^x)^{-2xy^w}$
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>$\sideset{^1_2}{^3_4}{\underset{6}\bigotimes}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(x^{y^z}=(1+e^x)^{-2xy^w}\)</span>
+<span class="arithmatex">\(\sideset{^1_2}{^3_4}{\underset{6}\bigotimes}\)</span></p>
+</blockquote>
+<h3 id="3_1">3、括号和分隔符<a class="headerlink" href="#3_1" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>$\langle\quad\rangle\quad\lceil\quad\rceil\quad\lfloor\quad\rfloor\quad\lbrace\quad\rbrace\quad\lVert\quad\rVert$
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>$f(x,y,z)=3y^2z\left(3+\dfrac{7x+5}{1+y^2}\right)$
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>$\left.\dfrac{\mathrm{d}u}{\mathrm{d}x}\right|_{x=0}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\langle\quad\rangle\quad\lceil\quad\rceil\quad\lfloor\quad\rfloor\quad\lbrace\quad\rbrace\quad\lVert\quad\rVert\)</span>
+<span class="arithmatex">\(f(x,y,z)=3y^2z\left(3+\dfrac{7x+5}{1+y^2}\right)\)</span>
+<span class="arithmatex">\(\left.\dfrac{\mathrm{d}u}{\mathrm{d}x}\right|_{x=0}\)</span></p>
+</blockquote>
+<h3 id="4">4、分数<a class="headerlink" href="#4" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>$\frac{a}{b}\quad\dfrac{a}{b}\quad {a\over b}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\frac{a}{b}\quad\dfrac{a}{b}\quad {a\over b}\)</span></p>
+</blockquote>
+<h3 id="5">5、开方<a class="headerlink" href="#5" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>$\sqrt[根指数,省略时为2]{被开方数}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\sqrt{2}\quad\sqrt[3]{2}\)</span></p>
+</blockquote>
+<h3 id="6">6、省略号<a class="headerlink" href="#6" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>$\cdots\quad\ldots\quad\vdots\quad\ddots$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\cdots\quad\ldots\quad\vdots\quad\ddots\)</span></p>
+</blockquote>
+<h3 id="7">7、矢量和均值<a class="headerlink" href="#7" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>$\overrightarrow{E(\vec{r})}\quad\overleftarrow{E(\vec{r})}\quad\overleftrightarrow{E(\vec{r})}\quad\underrightarrow{E(\vec{r})}\quad\underleftarrow{E(\vec{r})}\quad\underleftrightarrow{E(\vec{r})}\quad\overline{v}=\bar{v}\quad\underline{v}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\overrightarrow{E(\vec{r})}\quad\overleftarrow{E(\vec{r})}\quad\overleftrightarrow{E(\vec{r})}\quad\underrightarrow{E(\vec{r})}\quad\underleftarrow{E(\vec{r})}\quad\underleftrightarrow{E(\vec{r})}\quad\overline{v}=\bar{v}\quad\underline{v}\)</span></p>
+</blockquote>
+<h3 id="8">8、积分<a class="headerlink" href="#8" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>$$
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>\iint\limits_D\left(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y}\right){\rm d}x{\rm d}y=\oint\limits_LP{\rm d}x+Q{\rm d}y
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\iint\limits_D\left(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y}\right){\rm d}x{\rm d}y=\oint\limits_LP{\rm d}x+Q{\rm d}y
+$$</p>
+</blockquote>
+<h3 id="9">9、极限<a class="headerlink" href="#9" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>$\lim\limits_{n\to\infin}(1+\dfrac{1}{n})^n=e$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\lim\limits_{n\to\infin}(1+\dfrac{1}{n})^n=e\)</span></p>
+</blockquote>
+<h3 id="10">10、累加、累乘及交集、并集<a class="headerlink" href="#10" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>$\sum\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\prod\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\bigcup\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\bigcap\limits_{i=1}^n\dfrac{1}{n^2}$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\sum\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\prod\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\bigcup\limits_{i=1}^n\dfrac{1}{n^2}\quad and\quad\bigcap\limits_{i=1}^n\dfrac{1}{n^2}\)</span></p>
+</blockquote>
+<h3 id="11">11、希腊字母<a class="headerlink" href="#11" title="点击此处可置顶内容">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>字母</th>
+<th>语法</th>
+<th>字母</th>
+<th>语法</th>
+<th>字母</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\Alpha(\alpha)</td>
+<td><span class="arithmatex">\(\Alpha(\alpha)\)</span></td>
+<td>\Beta(\beta)</td>
+<td><span class="arithmatex">\(\Beta(\beta)\)</span></td>
+<td>\Gamma(\gamma)</td>
+<td><span class="arithmatex">\(\Gamma(\gamma)\)</span></td>
+</tr>
+<tr>
+<td>\Epsilon(\epsilon)\varepsilon</td>
+<td><span class="arithmatex">\(\Epsilon(\epsilon)\varepsilon\)</span></td>
+<td>\Zeta(\zeta)</td>
+<td><span class="arithmatex">\(\Zeta(\zeta)\)</span></td>
+<td>\Eta(\eta)</td>
+<td><span class="arithmatex">\(\Eta(\eta)\)</span></td>
+</tr>
+<tr>
+<td>\Iota(\iota)</td>
+<td><span class="arithmatex">\(\Iota(\iota)\)</span></td>
+<td>\Kappa(\kappa)\varkappa</td>
+<td><span class="arithmatex">\(\Kappa(\kappa)\varkappa\)</span></td>
+<td>\Lambda(\lambda)</td>
+<td><span class="arithmatex">\(\Lambda(\lambda)\)</span></td>
+</tr>
+<tr>
+<td>\Nu(\nu)</td>
+<td><span class="arithmatex">\(\Nu(\nu)\)</span></td>
+<td>\Xi(\xi)</td>
+<td><span class="arithmatex">\(\Xi(\xi)\)</span></td>
+<td>\Omicron(\omicron)</td>
+<td><span class="arithmatex">\(\Omicron(\omicron)\)</span></td>
+</tr>
+<tr>
+<td>\Rho(\rho)\varrho</td>
+<td><span class="arithmatex">\(\Rho(\rho)\varrho\)</span></td>
+<td>\Sigma(\sigma)\varsigma</td>
+<td><span class="arithmatex">\(\Sigma(\sigma)\varsigma\)</span></td>
+<td>\Tau(\tau)</td>
+<td><span class="arithmatex">\(\Tau(\tau)\)</span></td>
+</tr>
+<tr>
+<td>\Phi(\phi)\varphi</td>
+<td><span class="arithmatex">\(\Phi(\phi)\varphi\)</span></td>
+<td>\Chi(\chi)</td>
+<td><span class="arithmatex">\(\Chi(\chi)\)</span></td>
+<td>\Psi(\psi)</td>
+<td><span class="arithmatex">\(\Psi(\psi)\)</span></td>
+</tr>
+<tr>
+<td>\Delta(\delta)</td>
+<td><span class="arithmatex">\(\Delta(\delta)\)</span></td>
+<td>\Theta(\theta)\vartheta</td>
+<td><span class="arithmatex">\(\Theta(\theta)\vartheta\)</span></td>
+<td>\Mu(\mu)</td>
+<td><span class="arithmatex">\(\Mu(\mu)\)</span></td>
+</tr>
+<tr>
+<td>\Pi(\pi)\varpi</td>
+<td><span class="arithmatex">\(\Pi(\pi)\varpi\)</span></td>
+<td>\Omega(\omega)</td>
+<td><span class="arithmatex">\(\Omega(\omega)\)</span></td>
+<td>\upsilon</td>
+<td><span class="arithmatex">\(\upsilon\)</span></td>
+</tr>
+<tr>
+<td>\ell</td>
+<td><span class="arithmatex">\(\ell\)</span></td>
+<td>\eth</td>
+<td><span class="arithmatex">\(\eth\)</span></td>
+<td>\hbar</td>
+<td><span class="arithmatex">\(\hbar\)</span></td>
+</tr>
+<tr>
+<td>\hslash</td>
+<td><span class="arithmatex">\(\hslash\)</span></td>
+<td>\mho</td>
+<td><span class="arithmatex">\(\mho\)</span></td>
+<td>\partial</td>
+<td><span class="arithmatex">\(\partial\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="12">12、特殊字符<a class="headerlink" href="#12" title="点击此处可置顶内容">¶</a></h3>
+<h4 id="1_7">①说明<a class="headerlink" href="#1_7" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>可以在字符前使用<code>\large</code>或<code>\small</code>以显示更大或更小的字符。<span class="arithmatex">\({\LARGE A}{\Large A}{\large A}A{\small A}\)</span></p>
+</blockquote>
+<h4 id="2_7">②关系运算符<a class="headerlink" href="#2_7" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\pm(\mp)</td>
+<td><span class="arithmatex">\(\pm(\mp)\)</span></td>
+<td>\times</td>
+<td><span class="arithmatex">\(\times\)</span></td>
+<td>\div</td>
+<td><span class="arithmatex">\(\div\)</span></td>
+</tr>
+<tr>
+<td>\nmid</td>
+<td><span class="arithmatex">\(\nmid\)</span></td>
+<td>\cdot</td>
+<td><span class="arithmatex">\(\cdot\)</span></td>
+<td>\mid</td>
+<td><span class="arithmatex">\(\mid\)</span></td>
+</tr>
+<tr>
+<td>\bigodot</td>
+<td><span class="arithmatex">\(\bigodot\)</span></td>
+<td>\bigotimes</td>
+<td><span class="arithmatex">\(\bigotimes\)</span></td>
+<td>\bigoplus</td>
+<td><span class="arithmatex">\(\bigoplus\)</span></td>
+</tr>
+<tr>
+<td>\ge</td>
+<td><span class="arithmatex">\(\ge\)</span></td>
+<td>\le</td>
+<td><span class="arithmatex">\(\le\)</span></td>
+<td>\ll</td>
+<td><span class="arithmatex">\(\ll\)</span></td>
+</tr>
+<tr>
+<td>\geqslant</td>
+<td><span class="arithmatex">\(\geqslant\)</span></td>
+<td>\leqslant</td>
+<td><span class="arithmatex">\(\leqslant\)</span></td>
+<td>\neq</td>
+<td><span class="arithmatex">\(\neq\)</span></td>
+</tr>
+<tr>
+<td>\approx</td>
+<td><span class="arithmatex">\(\approx\)</span></td>
+<td>\xlongequal{文本}</td>
+<td><span class="arithmatex">\(\xlongequal{文本}\)</span></td>
+<td>\triangleq</td>
+<td><span class="arithmatex">\(\triangleq\)</span></td>
+</tr>
+<tr>
+<td>\sim</td>
+<td><span class="arithmatex">\(\sim\)</span></td>
+<td>\doteq</td>
+<td><span class="arithmatex">\(\doteq\)</span></td>
+<td>\equiv</td>
+<td><span class="arithmatex">\(\equiv\)</span></td>
+</tr>
+<tr>
+<td>\cong</td>
+<td><span class="arithmatex">\(\cong\)</span></td>
+<td>\propto</td>
+<td><span class="arithmatex">\(\propto\)</span></td>
+<td>\parallel(\</td>
+<td>)</td>
+</tr>
+<tr>
+<td>\prec</td>
+<td><span class="arithmatex">\(\prec\)</span></td>
+<td>\pmod{2}</td>
+<td><span class="arithmatex">\(\pmod{2}\)</span></td>
+<td>\bmod</td>
+<td><span class="arithmatex">\(\bmod{2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3_2">③集合运算符<a class="headerlink" href="#3_2" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\emptyset</td>
+<td><span class="arithmatex">\(\emptyset\)</span></td>
+<td>\varnothing</td>
+<td><span class="arithmatex">\(\varnothing\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\subset</td>
+<td><span class="arithmatex">\(\subset\)</span></td>
+<td>\subseteq</td>
+<td><span class="arithmatex">\(\subseteq\)</span></td>
+<td>\subsetneq</td>
+<td><span class="arithmatex">\(\subsetneq\)</span></td>
+</tr>
+<tr>
+<td>\supset</td>
+<td><span class="arithmatex">\(\supset\)</span></td>
+<td>\supseteq</td>
+<td><span class="arithmatex">\(\supseteq\)</span></td>
+<td>\supsetneq</td>
+<td><span class="arithmatex">\(\supsetneq\)</span></td>
+</tr>
+<tr>
+<td>\bigcap</td>
+<td><span class="arithmatex">\(\bigcap\)</span></td>
+<td>\bigcup</td>
+<td><span class="arithmatex">\(\bigcup\)</span></td>
+<td>\setminus</td>
+<td><span class="arithmatex">\(\setminus\)</span></td>
+</tr>
+<tr>
+<td>\bigvee</td>
+<td><span class="arithmatex">\(\bigvee\)</span></td>
+<td>\bigwedge</td>
+<td><span class="arithmatex">\(\bigwedge\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\in</td>
+<td><span class="arithmatex">\(\in\)</span></td>
+<td>\notin</td>
+<td><span class="arithmatex">\(\notin\)</span></td>
+<td>\ni</td>
+<td><span class="arithmatex">\(\ni\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="4_1">④三角运算符<a class="headerlink" href="#4_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\circ</td>
+<td><span class="arithmatex">\(\circ\)</span></td>
+<td>\bot</td>
+<td><span class="arithmatex">\(\bot\)</span></td>
+<td>\angle</td>
+<td><span class="arithmatex">\(\angle\)</span></td>
+</tr>
+<tr>
+<td>\degree</td>
+<td><span class="arithmatex">\(\degree\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="5_1">⑤微积分运算符<a class="headerlink" href="#5_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\int</td>
+<td><span class="arithmatex">\(\int\)</span></td>
+<td>\iint</td>
+<td><span class="arithmatex">\(\iint\)</span></td>
+<td>\iiint</td>
+<td><span class="arithmatex">\(\iiint\)</span></td>
+</tr>
+<tr>
+<td>\oint</td>
+<td><span class="arithmatex">\(\oint\)</span></td>
+<td>\oiint</td>
+<td><span class="arithmatex">\(\oiint\)</span></td>
+<td>\prime(‘)</td>
+<td><span class="arithmatex">\(\prime\)</span></td>
+</tr>
+<tr>
+<td>\lim</td>
+<td><span class="arithmatex">\(\lim\)</span></td>
+<td>\infin</td>
+<td><span class="arithmatex">\(\infin\)</span></td>
+<td>\nabla</td>
+<td><span class="arithmatex">\(\nabla\)</span></td>
+</tr>
+<tr>
+<td>\grad</td>
+<td><span class="arithmatex">\(\grad\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="6_1">⑥逻辑运算符<a class="headerlink" href="#6_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\because</td>
+<td><span class="arithmatex">\(\because\)</span></td>
+<td>\therefore</td>
+<td><span class="arithmatex">\(\therefore\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\forall</td>
+<td><span class="arithmatex">\(\forall\)</span></td>
+<td>\exist</td>
+<td><span class="arithmatex">\(\exist\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\not&gt;</td>
+<td><span class="arithmatex">\(\not&gt;\)</span></td>
+<td>\not&lt;</td>
+<td><span class="arithmatex">\(\not&lt;\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\land</td>
+<td><span class="arithmatex">\(\land\)</span></td>
+<td>\lor</td>
+<td><span class="arithmatex">\(\lor\)</span></td>
+<td>\lnot</td>
+<td><span class="arithmatex">\(\lnot\)</span></td>
+</tr>
+<tr>
+<td>\top</td>
+<td><span class="arithmatex">\(\top\)</span></td>
+<td>\vdash</td>
+<td><span class="arithmatex">\(\vdash\)</span></td>
+<td>\vDash</td>
+<td><span class="arithmatex">\(\vDash\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="7_1">⑦带帽符号<a class="headerlink" href="#7_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\hat{xy}</td>
+<td><span class="arithmatex">\(\hat{xy}\)</span></td>
+<td>\widehat{xyz}</td>
+<td><span class="arithmatex">\(\widehat{xyz}\)</span></td>
+</tr>
+<tr>
+<td>\tilde{xy}</td>
+<td><span class="arithmatex">\(\tilde{xy}\)</span></td>
+<td>\widetilde{xyz}</td>
+<td><span class="arithmatex">\(\widetilde{xyz}\)</span></td>
+</tr>
+<tr>
+<td>\check{x}</td>
+<td><span class="arithmatex">\(\check{x}\)</span></td>
+<td>\breve{y}</td>
+<td><span class="arithmatex">\(\breve{y}\)</span></td>
+</tr>
+<tr>
+<td>\grave{x}</td>
+<td><span class="arithmatex">\(\grave{x}\)</span></td>
+<td>\acute{y}</td>
+<td><span class="arithmatex">\(\acute{y}\)</span></td>
+</tr>
+<tr>
+<td>\dot{x}</td>
+<td><span class="arithmatex">\(\dot{x}\)</span></td>
+<td>\ddot{x}</td>
+<td><span class="arithmatex">\(\ddot{x}\)</span></td>
+</tr>
+<tr>
+<td>\overparen{xy}</td>
+<td><span class="arithmatex">\(\overparen{xy}\)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="8_1">⑧选取符号<a class="headerlink" href="#8_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\fbox{a+b+c+d}</td>
+<td><span class="arithmatex">\(\fbox{a+b+c+d}\)</span></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\overbrace{xx\cdots x}^{10个x}</td>
+<td><span class="arithmatex">\(\overbrace{xx\cdots x}^{10个x}\)</span></td>
+<td>\underbrace{xx\cdots x}_{10个x}</td>
+<td><span class="arithmatex">\(\underbrace{xx\cdots x}_{10个x}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="9_1">⑨箭头符号<a class="headerlink" href="#9_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\leftarrow</td>
+<td><span class="arithmatex">\(\leftarrow\)</span></td>
+<td>\rightarrow</td>
+<td><span class="arithmatex">\(\rightarrow\)</span></td>
+<td>\leftrightarrow</td>
+<td><span class="arithmatex">\(\leftrightarrow\)</span></td>
+</tr>
+<tr>
+<td>\longleftarrow</td>
+<td><span class="arithmatex">\(\longleftarrow\)</span></td>
+<td>\longrightarrow</td>
+<td><span class="arithmatex">\(\longrightarrow\)</span></td>
+<td>\longleftrightarrow</td>
+<td><span class="arithmatex">\(\longleftrightarrow\)</span></td>
+</tr>
+<tr>
+<td>\Leftarrow</td>
+<td><span class="arithmatex">\(\Leftarrow\)</span></td>
+<td>\Rightarrow</td>
+<td><span class="arithmatex">\(\Rightarrow\)</span></td>
+<td>\Leftrightarrow</td>
+<td><span class="arithmatex">\(\Leftrightarrow\)</span></td>
+</tr>
+<tr>
+<td>\Longleftarrow</td>
+<td><span class="arithmatex">\(\Longleftarrow\)</span></td>
+<td>\Longrightarrow</td>
+<td><span class="arithmatex">\(\Longrightarrow\)</span></td>
+<td>\Longleftrightarrow</td>
+<td><span class="arithmatex">\(\Longleftrightarrow\)</span></td>
+</tr>
+<tr>
+<td>\uparrow</td>
+<td><span class="arithmatex">\(\uparrow\)</span></td>
+<td>\downarrow</td>
+<td><span class="arithmatex">\(\downarrow\)</span></td>
+<td>\updownarrow</td>
+<td><span class="arithmatex">\(\updownarrow\)</span></td>
+</tr>
+<tr>
+<td>\Uparrow</td>
+<td><span class="arithmatex">\(\Uparrow\)</span></td>
+<td>\Downarrow</td>
+<td><span class="arithmatex">\(\Downarrow\)</span></td>
+<td>\Updownarrow</td>
+<td><span class="arithmatex">\(\Updownarrow\)</span></td>
+</tr>
+<tr>
+<td>\to</td>
+<td><span class="arithmatex">\(\to\)</span></td>
+<td>\swarrow</td>
+<td><span class="arithmatex">\(\swarrow\)</span></td>
+<td>\nearrow</td>
+<td><span class="arithmatex">\(\nearrow\)</span></td>
+</tr>
+<tr>
+<td>\gets</td>
+<td><span class="arithmatex">\(\gets\)</span></td>
+<td>\searrow</td>
+<td><span class="arithmatex">\(\searrow\)</span></td>
+<td>\nwarrow</td>
+<td><span class="arithmatex">\(\nwarrow\)</span></td>
+</tr>
+<tr>
+<td>\mapsto</td>
+<td><span class="arithmatex">\(\mapsto\)</span></td>
+<td>\rightrightarrows</td>
+<td><span class="arithmatex">\(\rightrightarrows\)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="10_1">⑩空格<a class="headerlink" href="#10_1" title="点击此处可置顶内容">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>效果</th>
+<th>输入</th>
+<th>效果</th>
+<th>输入</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\!</td>
+<td>$</td>
+<td>!</td>
+<td>$</td>
+<td>默认</td>
+<td>$</td>
+</tr>
+<tr>
+<td>\,</td>
+<td>$</td>
+<td>\,</td>
+<td>$</td>
+<td>\;(\ )</td>
+<td>$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13">13、字体<a class="headerlink" href="#13" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>${\字体{需要转换的字符}}$
+</span></code></pre></div>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>说明</th>
+<th>显示</th>
+<th>输入</th>
+<th>说明</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\rm</td>
+<td>罗马体</td>
+<td><span class="arithmatex">\({\rm{Sample}}\)</span></td>
+<td>\cal</td>
+<td>花体</td>
+<td><span class="arithmatex">\({\cal{Sample}}\)</span></td>
+</tr>
+<tr>
+<td>\it</td>
+<td>意大利体</td>
+<td><span class="arithmatex">\({\it{Sample}}\)</span></td>
+<td>\Bbb</td>
+<td>黑板粗体</td>
+<td><span class="arithmatex">\({\Bbb{Sample}}\)</span></td>
+</tr>
+<tr>
+<td>\bf</td>
+<td>粗体</td>
+<td><span class="arithmatex">\({\bf{Sample}}\)</span></td>
+<td>\mit</td>
+<td>数学斜体</td>
+<td><span class="arithmatex">\({\mit{Sample}}\)</span></td>
+</tr>
+<tr>
+<td>\sf</td>
+<td>等线体</td>
+<td><span class="arithmatex">\({\sf{Sample}}\)</span></td>
+<td>\scr</td>
+<td>手写体</td>
+<td><span class="arithmatex">\({\scr{Sample}}\)</span></td>
+</tr>
+<tr>
+<td>\tt</td>
+<td>打字机体</td>
+<td><span class="arithmatex">\({\tt{Sample}}\)</span></td>
+<td>\frak</td>
+<td>旧德式字体</td>
+<td><span class="arithmatex">\({\frak{Sample}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="14">14、大括号和行标<a class="headerlink" href="#14" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  使用<code>\left</code>和<code>\right</code>来创建自动匹配高度的<code>()</code>、<code>[]</code>、<code>{}</code>、<code>.</code>。在每个公式末尾使用<code>\tag{行标}</code>来实现行标。</p>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>$$
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>f\left(
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>\left[
+</span><span id="__span-30-4"><a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>\dfrac{1+\{x,y\}}{\left(\dfrac{x}{y}+\dfrac{y}{x}\right)(u+1)}+a
+</span><span id="__span-30-5"><a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>\right]
+</span><span id="__span-30-6"><a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>^{\dfrac{3}{2}}
+</span><span id="__span-30-7"><a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>\right)
+</span><span id="__span-30-8"><a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>\tag{行标}
+</span><span id="__span-30-9"><a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+f\left(\left[\dfrac{1+{x,y}}{\left(\dfrac{x}{y}+\dfrac{y}{x}\right)(u+1)}+a\right]^{\dfrac{3}{2}}\right)\tag{行标}
+$$</p>
+<p>说明:如果你想将行内显示的分隔符也变大,也可以使用<code>\middle</code>命令</p>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>$$
+</span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>\left\langle q\middle\|\dfrac{\dfrac{x}{y}}{\dfrac{u}{v}}\middle|p\right\rangle
+</span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\left\langle q\middle|\dfrac{\dfrac{x}{y}}{\dfrac{u}{v}}\middle|p\right\rangle
+$$</p>
+</blockquote>
+<h3 id="15">15、其他命令<a class="headerlink" href="#15" title="点击此处可置顶内容">¶</a></h3>
+<h4 id="1_8">①注释文字<a class="headerlink" href="#1_8" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>$\text{文字}$
+</span></code></pre></div>
+<p>效果:
+$$
+f(n)=\begin{cases}n/2,&amp;\text{if <span class="arithmatex">\(n\)</span> is even}\3n+1,&amp;\text{if <span class="arithmatex">\(n\)</span> is odd}\end{cases}
+$$</p>
+</blockquote>
+<h4 id="3_3">③文字颜色<a class="headerlink" href="#3_3" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<ul>
+<li>适用新旧浏览器
+代码:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>$\color{颜色}{文字}$
+</span></code></pre></div></li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+<th>输入</th>
+<th>显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>black</td>
+<td><span class="arithmatex">\(\color{black}{color}\)</span></td>
+<td>grey</td>
+<td><span class="arithmatex">\(\color{grey}{color}\)</span></td>
+<td>silver</td>
+<td><span class="arithmatex">\(\color{silver}{color}\)</span></td>
+</tr>
+<tr>
+<td>white</td>
+<td><span class="arithmatex">\(\color{white}{color}\)</span></td>
+<td>maroon</td>
+<td><span class="arithmatex">\(\color{maroon}{color}\)</span></td>
+<td>red</td>
+<td><span class="arithmatex">\(\color{red}{color}\)</span></td>
+</tr>
+<tr>
+<td>yellow</td>
+<td><span class="arithmatex">\(\color{yellow}{color}\)</span></td>
+<td>lime</td>
+<td><span class="arithmatex">\(\color{lime}{color}\)</span></td>
+<td>olive</td>
+<td><span class="arithmatex">\(\color{olive}{color}\)</span></td>
+</tr>
+<tr>
+<td>green</td>
+<td><span class="arithmatex">\(\color{green}{color}\)</span></td>
+<td>teal</td>
+<td><span class="arithmatex">\(\color{teal}{color}\)</span></td>
+<td>auqa</td>
+<td><span class="arithmatex">\(\color{auqa}{color}\)</span></td>
+</tr>
+<tr>
+<td>blue</td>
+<td><span class="arithmatex">\(\color{blue}{color}\)</span></td>
+<td>navy</td>
+<td><span class="arithmatex">\(\color{navy}{color}\)</span></td>
+<td>purple</td>
+<td><span class="arithmatex">\(\color{purple}{color}\)</span></td>
+</tr>
+<tr>
+<td>fuchsia</td>
+<td><span class="arithmatex">\(\color{fuchsia}{color}\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>适用新版浏览器
+代码:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>$\color{#rgb}{文字}$    (注:其中r、g、b可以输入0~9和a~f来分别表示红色、绿色和蓝色的纯度)
+</span></code></pre></div></li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>输出</th>
+<th>输入</th>
+<th>输出</th>
+<th>输入</th>
+<th>输出</th>
+<th>输入</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#000</td>
+<td><span class="arithmatex">\(\color{#000}{color}\)</span></td>
+<td>#005</td>
+<td><span class="arithmatex">\(\color{#005}{color}\)</span></td>
+<td>#00A</td>
+<td><span class="arithmatex">\(\color{#00A}{color}\)</span></td>
+<td>#00F</td>
+<td><span class="arithmatex">\(\color{#00F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#500</td>
+<td><span class="arithmatex">\(\color{#500}{color}\)</span></td>
+<td>#505</td>
+<td><span class="arithmatex">\(\color{#505}{color}\)</span></td>
+<td>#50A</td>
+<td><span class="arithmatex">\(\color{#50A}{color}\)</span></td>
+<td>#50F</td>
+<td><span class="arithmatex">\(\color{#50F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#A00</td>
+<td><span class="arithmatex">\(\color{#A00}{color}\)</span></td>
+<td>#A05</td>
+<td><span class="arithmatex">\(\color{#A05}{color}\)</span></td>
+<td>#A0A</td>
+<td><span class="arithmatex">\(\color{#A0A}{color}\)</span></td>
+<td>#A0F</td>
+<td><span class="arithmatex">\(\color{#A0F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#F00</td>
+<td><span class="arithmatex">\(\color{#F00}{color}\)</span></td>
+<td>#F05</td>
+<td><span class="arithmatex">\(\color{#F05}{color}\)</span></td>
+<td>#F0A</td>
+<td><span class="arithmatex">\(\color{#F0A}{color}\)</span></td>
+<td>#F0F</td>
+<td><span class="arithmatex">\(\color{#F0F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#050</td>
+<td><span class="arithmatex">\(\color{#050}{color}\)</span></td>
+<td>#055</td>
+<td><span class="arithmatex">\(\color{#055}{color}\)</span></td>
+<td>#05A</td>
+<td><span class="arithmatex">\(\color{#05A}{color}\)</span></td>
+<td>#05F</td>
+<td><span class="arithmatex">\(\color{#05F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#550</td>
+<td><span class="arithmatex">\(\color{#550}{color}\)</span></td>
+<td>#555</td>
+<td><span class="arithmatex">\(\color{#555}{color}\)</span></td>
+<td>#55A</td>
+<td><span class="arithmatex">\(\color{#55A}{color}\)</span></td>
+<td>#55F</td>
+<td><span class="arithmatex">\(\color{#55F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#A50</td>
+<td><span class="arithmatex">\(\color{#A50}{color}\)</span></td>
+<td>#A55</td>
+<td><span class="arithmatex">\(\color{#A55}{color}\)</span></td>
+<td>#A5A</td>
+<td><span class="arithmatex">\(\color{#A5A}{color}\)</span></td>
+<td>#A5F</td>
+<td><span class="arithmatex">\(\color{#A5F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#F50</td>
+<td><span class="arithmatex">\(\color{#F50}{color}\)</span></td>
+<td>#F55</td>
+<td><span class="arithmatex">\(\color{#F55}{color}\)</span></td>
+<td>#F5A</td>
+<td><span class="arithmatex">\(\color{#F5A}{color}\)</span></td>
+<td>#F5F</td>
+<td><span class="arithmatex">\(\color{#F5F}{color}\)</span></td>
+</tr>
+<tr>
+<td>#0A0</td>
+<td><span class="arithmatex">\(\color{#0A0}{color}\)</span></td>
+<td>#0A5</td>
+<td><span class="arithmatex">\(\color{#0A5}{color}\)</span></td>
+<td>#0AA</td>
+<td><span class="arithmatex">\(\color{#0AA}{color}\)</span></td>
+<td>#0AF</td>
+<td><span class="arithmatex">\(\color{#0AF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#5A0</td>
+<td><span class="arithmatex">\(\color{#5A0}{color}\)</span></td>
+<td>#5A5</td>
+<td><span class="arithmatex">\(\color{#5A5}{color}\)</span></td>
+<td>#5AA</td>
+<td><span class="arithmatex">\(\color{#5AA}{color}\)</span></td>
+<td>#5AF</td>
+<td><span class="arithmatex">\(\color{#5AF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#AA0</td>
+<td><span class="arithmatex">\(\color{#AA0}{color}\)</span></td>
+<td>#AA5</td>
+<td><span class="arithmatex">\(\color{#AA5}{color}\)</span></td>
+<td>#AAA</td>
+<td><span class="arithmatex">\(\color{#AAA}{color}\)</span></td>
+<td>#AAF</td>
+<td><span class="arithmatex">\(\color{#AAF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#FA0</td>
+<td><span class="arithmatex">\(\color{#FA0}{color}\)</span></td>
+<td>#FA5</td>
+<td><span class="arithmatex">\(\color{#FA5}{color}\)</span></td>
+<td>#FAA</td>
+<td><span class="arithmatex">\(\color{#FAA}{color}\)</span></td>
+<td>#FAF</td>
+<td><span class="arithmatex">\(\color{#FAF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#0F0</td>
+<td><span class="arithmatex">\(\color{#0F0}{color}\)</span></td>
+<td>#0F5</td>
+<td><span class="arithmatex">\(\color{#0F5}{color}\)</span></td>
+<td>#0FA</td>
+<td><span class="arithmatex">\(\color{#0FA}{color}\)</span></td>
+<td>#0FF</td>
+<td><span class="arithmatex">\(\color{#0FF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#5F0</td>
+<td><span class="arithmatex">\(\color{#5F0}{color}\)</span></td>
+<td>#5F5</td>
+<td><span class="arithmatex">\(\color{#5F5}{color}\)</span></td>
+<td>#5FA</td>
+<td><span class="arithmatex">\(\color{#5FA}{color}\)</span></td>
+<td>#5FF</td>
+<td><span class="arithmatex">\(\color{#5FF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#AF0</td>
+<td><span class="arithmatex">\(\color{#AF0}{color}\)</span></td>
+<td>#AF5</td>
+<td><span class="arithmatex">\(\color{#AF5}{color}\)</span></td>
+<td>#AFA</td>
+<td><span class="arithmatex">\(\color{#AFA}{color}\)</span></td>
+<td>#AFF</td>
+<td><span class="arithmatex">\(\color{#AFF}{color}\)</span></td>
+</tr>
+<tr>
+<td>#FF0</td>
+<td><span class="arithmatex">\(\color{#FF0}{color}\)</span></td>
+<td>#FF5</td>
+<td><span class="arithmatex">\(\color{#FF5}{color}\)</span></td>
+<td>#FFA</td>
+<td><span class="arithmatex">\(\color{#FFA}{color}\)</span></td>
+<td>#FFF</td>
+<td><span class="arithmatex">\(\color{#FFF}{color}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3_4">③删除线<a class="headerlink" href="#3_4" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>说明:  使用<code>\require{cancle}</code>声明，再使用<code>\cancle{字符}</code>、<code>\bcancle{字符}</code>、<code>\xcancle{字符}</code>、<code>\cancleto{字符}{字符}</code>来实现各种<strong>片段删除线</strong>效果。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>$$
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>\require{cancel}\begin{array}{r1}
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>\verb|y+\cancel{x}|&amp;y+\cancel{x}\\
+</span><span id="__span-35-4"><a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>\verb|y+\cancel{y+x}|&amp;y+\cancel{y+x}\\
+</span><span id="__span-35-5"><a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>\verb|y+\bcancel{x}|&amp;y+\bcancel{x}\\
+</span><span id="__span-35-6"><a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>\verb|y+\xcancel{x}|&amp;y+\xcancel{x}\\
+</span><span id="__span-35-7"><a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>\verb|y+\cancelto{0}{x}|&amp;y+\cancelto{0}{x}\\
+</span><span id="__span-35-8"><a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>\verb+\frac{1\cancel9}{\cancel95}=\frac15+&amp;\frac{1\cancel9}{\cancel95}=\frac15\\
+</span><span id="__span-35-9"><a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a>\end{array}
+</span><span id="__span-35-10"><a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\require{cancel}\begin{array}{r1}
+\verb|y+\cancel{x}|&amp;y+\cancel{x}\
+\verb|y+\cancel{y+x}|&amp;y+\cancel{y+x}\
+\verb|y+\bcancel{x}|&amp;y+\bcancel{x}\
+\verb|y+\xcancel{x}|&amp;y+\xcancel{x}\
+\verb|y+\cancelto{0}{x}|&amp;y+\cancelto{0}{x}\
+\verb+\frac{1\cancel9}{\cancel95}=\frac15+&amp;\frac{1\cancel9}{\cancel95}=\frac15\
+\end{array}
+$$</p>
+<p>说明:  使用<code>\require{enclose}</code>来允许<strong>整段删除线</strong>的显示，再使用<code>\enclose{删除线效果}{字符}</code>来使用各种整段删除线效果。其中，删除线效果有<code>horizontalstrike</code>、<code>verticalstrike</code>、<code>updiagonalstrike</code>和<code>downdiagonalstrike</code>,可以叠加使用。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>$$
+</span><span id="__span-36-2"><a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>\require{enclose}\begin{array}{r1}
+</span><span id="__span-36-3"><a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>\verb|\enclose{horizontalstrike}{x+y}|&amp;\enclose{horizontalstrike}{x+y}\\
+</span><span id="__span-36-4"><a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>\verb|\enclose{verticalstrike}{\frac xy}|&amp;\enclose{verticalstrike}{\frac xy}\\
+</span><span id="__span-36-5"><a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>\verb|\enclose{updiagonalstrike}{x+y}|&amp;\enclose{updiagonalstrike}{x+y}\\
+</span><span id="__span-36-6"><a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>\verb|\enclose{downdiagonalstrike}{x+y}|&amp;\enclose{downdiagonalstrike}{x+y}\\
+</span><span id="__span-36-7"><a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}|&amp;\enclose{horizontalstrike,updiagonalstrike}{x+y}\\
+</span><span id="__span-36-8"><a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>\end{array}
+</span><span id="__span-36-9"><a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\require{enclose}\begin{array}{r1}
+\verb|\enclose{horizontalstrike}{x+y}|&amp;\enclose{horizontalstrike}{x+y}\
+\verb|\enclose{verticalstrike}{\frac xy}|&amp;\enclose{verticalstrike}{\frac xy}\
+\verb|\enclose{updiagonalstrike}{x+y}|&amp;\enclose{updiagonalstrike}{x+y}\
+\verb|\enclose{downdiagonalstrike}{x+y}|&amp;\enclose{downdiagonalstrike}{x+y}\
+\verb|\enclose{horizontalstrike,updiagonalstrike}{x+y}|&amp;\enclose{horizontalstrike,updiagonalstrike}{x+y}\
+\end{array}
+$$</p>
+</blockquote>
+<h3 id="16">16、矩阵<a class="headerlink" href="#16" title="点击此处可置顶内容">¶</a></h3>
+<h4 id="1_9">①无框矩阵<a class="headerlink" href="#1_9" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>$$
+</span><span id="__span-37-2"><a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>\begin{matrix}
+</span><span id="__span-37-3"><a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>1&amp;x&amp;x^2\\
+</span><span id="__span-37-4"><a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>1&amp;y&amp;y^2\\
+</span><span id="__span-37-5"><a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>1&amp;z&amp;z^2\\
+</span><span id="__span-37-6"><a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>\end{matrix}
+</span><span id="__span-37-7"><a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\begin{matrix}
+1&amp;x&amp;x^2\
+1&amp;y&amp;y^2\
+1&amp;z&amp;z^2\
+\end{matrix}
+$$</p>
+</blockquote>
+<h4 id="2_8">②边框矩阵<a class="headerlink" href="#2_8" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>说明:  在开头将<code>matrix</code>替换为<code>pmatrix</code>、<code>bmatrix</code>、<code>Bmatrix</code>、<code>vmatrix</code>、<code>Vmatrix</code>。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>matrix</th>
+<th>pmatrix</th>
+<th>bmatrix</th>
+<th>Bmatrix</th>
+<th>vmatrix</th>
+<th>Vmatrix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\begin{matrix}1&amp;2\\3&amp;4\end{matrix}\)</span></td>
+<td><span class="arithmatex">\(\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\)</span></td>
+<td><span class="arithmatex">\(\begin{bmatrix}1&amp;2\\3&amp;4\end{bmatrix}\)</span></td>
+<td><span class="arithmatex">\(\begin{Bmatrix}1&amp;2\\3&amp;4\end{Bmatrix}\)</span></td>
+<td><span class="arithmatex">\(\begin{vmatrix}1&amp;2\\3&amp;4\end{vmatrix}\)</span></td>
+<td><span class="arithmatex">\(\begin{Vmatrix}1&amp;2\\3&amp;4\end{Vmatrix}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3_5">③带分割线的矩阵<a class="headerlink" href="#3_5" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>说明:  可以使用<code>cc|c</code>来在一个三列矩阵中插入分割线。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>$$
+</span><span id="__span-38-2"><a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>\left[
+</span><span id="__span-38-3"><a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>\begin{array}{cc|c}
+</span><span id="__span-38-4"><a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>1&amp;2&amp;3\\
+</span><span id="__span-38-5"><a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>4&amp;5&amp;6
+</span><span id="__span-38-6"><a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>\end{array}
+</span><span id="__span-38-7"><a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>\right]
+</span><span id="__span-38-8"><a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\left[
+\begin{array}{cc|c}
+1&amp;2&amp;3\
+4&amp;5&amp;6
+\end{array}
+\right]
+$$</p>
+</blockquote>
+<h4 id="4_2">④行中矩阵<a class="headerlink" href="#4_2" title="点击此处可置顶内容">¶</a></h4>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>$\bigl(\begin{smallmatrix}a&amp;b\\c&amp;d\end{smallmatrix}\bigr)$
+</span></code></pre></div>
+<p>效果:
+<span class="arithmatex">\(\bigl(\begin{smallmatrix}a&amp;b\\c&amp;d\end{smallmatrix}\bigr)\)</span></p>
+</blockquote>
+<h3 id="17">17、方程式序列<a class="headerlink" href="#17" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  可以使用<code>\begin{align}...\end{align}</code>来创建一列整齐且默认右对齐的方程式序列。请注意<code>{align}</code>是<strong>自动编号</strong>的，使用<code>{align*}</code>来声明停止自动编号，也可以使用<code>\notag</code>来取消特定行的自动编号。在需要的时候，你可以使用<code>\begin{equation}...\end{equation}</code>来强制表达式自动编号。</p>
+<p>代码:
+$$
+\begin{align}
+f(x)&amp;=1+1\
+&amp;=2
+\end{align}
+$$</p>
+<div class="arithmatex">\[
+\begin{equation}
+\left[
+\begin{array}{cc|c}
+1&amp;2&amp;3\\
+4&amp;5&amp;6
+\end{array}
+\right]
+\end{equation}
+\]</div>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>$$
+</span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>\begin{align}
+</span><span id="__span-40-3"><a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>\sqrt{37}=\sqrt{\dfrac{73^2-1}{12^2}}\\
+</span><span id="__span-40-4"><a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>&amp;=\sqrt{\dfrac{73^2}{12^2}\cdot\dfrac{73^2-1}{73^2}}\\
+</span><span id="__span-40-5"><a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>&amp;=\sqrt{\dfrac{73^2}{12^2}}\sqrt{\dfrac{73^2-1}{73^2}}\notag\\
+</span><span id="__span-40-6"><a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>&amp;=\dfrac{73}{12}\sqrt{1-\dfrac{1}{73^2}}\\
+</span><span id="__span-40-7"><a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>\approx\dfrac{73}{12}\left(1-\dfrac{1}{2\cdot73^2}\right)\label{A}
+</span><span id="__span-40-8"><a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>\end{align}
+</span><span id="__span-40-9"><a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a>$$
+</span><span id="__span-40-10"><a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a>***
+</span><span id="__span-40-11"><a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a>
+</span><span id="__span-40-12"><a id="__codelineno-40-12" name="__codelineno-40-12" href="#__codelineno-40-12"></a>$$
+</span><span id="__span-40-13"><a id="__codelineno-40-13" name="__codelineno-40-13" href="#__codelineno-40-13"></a>\begin{align*}
+</span><span id="__span-40-14"><a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a>v+m&amp;=0&amp;\text{Given}\tag1\\
+</span><span id="__span-40-15"><a id="__codelineno-40-15" name="__codelineno-40-15" href="#__codelineno-40-15"></a>-w&amp;=-w+0&amp;\text{additive identity}\tag2\\
+</span><span id="__span-40-16"><a id="__codelineno-40-16" name="__codelineno-40-16" href="#__codelineno-40-16"></a>-w+0&amp;=-w+(v+w)&amp;\text{equations $(1)$ and $(2)$}
+</span><span id="__span-40-17"><a id="__codelineno-40-17" name="__codelineno-40-17" href="#__codelineno-40-17"></a>\end{align*}
+</span><span id="__span-40-18"><a id="__codelineno-40-18" name="__codelineno-40-18" href="#__codelineno-40-18"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\begin{align}
+\sqrt{37}&amp;=\sqrt{\dfrac{73<sup>2-1}{12</sup>2}}\
+&amp;=\sqrt{\dfrac{73<sup>2}{12</sup>2}\cdot\dfrac{73<sup>2-1}{73</sup>2}}\
+&amp;=\sqrt{\dfrac{73<sup>2}{12</sup>2}}\sqrt{\dfrac{73<sup>2-1}{73</sup>2}}\notag\
+&amp;=\dfrac{73}{12}\sqrt{1-\dfrac{1}{73^2}}\
+&amp;\approx\dfrac{73}{12}\left(1-\dfrac{1}{2\cdot73^2}\right)\label{A}
+\end{align}
+$$</p>
+<hr>
+<div class="arithmatex">\[
+\begin{align*}
+v+m&amp;=0&amp;\text{Given}\tag1\\
+-w&amp;=-w+0&amp;\text{additive identity}\tag2\\
+-w+0&amp;=-w+(v+w)&amp;\text{equations $(1)$ and $(2)$}
+\end{align*}
+\]</div>
+<p>你可以使用<code>\label{标签}</code>来创建一个标签，就如上面的方程式序列中展示的那样，之后使用<code>\eqref{标签}</code>引用你想引用的公式，效果为：<span class="arithmatex">\(\eqref{A}\)</span>。如果不想要括号，可以输入<code>\ref{标签}</code>，效果为：公式 <span class="arithmatex">\(\ref{A}\)</span>。</p>
+<p>公式1和2的不同列之间存在间隔，如果你不想要，可以通过将<code>align</code>替换为<code>alignat{1}</code>来去除列间隔。</p>
+</blockquote>
+<h3 id="18">18、条件表达式<a class="headerlink" href="#18" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  使用<code>\begin{cases}</code>来创造一组默认左对齐的条件表达式,在每一行插入<code>&amp;</code>来指定需要对齐的内容,并在每一行结尾处使用<code>\\</code>,以<code>\end{cases}</code>结尾。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>$$
+</span><span id="__span-41-2"><a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>f(n)=
+</span><span id="__span-41-3"><a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>\begin{cases}
+</span><span id="__span-41-4"><a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>n/2,&amp;\text{if $n$ is even}\\
+</span><span id="__span-41-5"><a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>3n+1,&amp;\text{if $n$ is odd}
+</span><span id="__span-41-6"><a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>\end{cases}
+</span><span id="__span-41-7"><a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+f(n)=
+\begin{cases}
+n/2,&amp;\text{if <span class="arithmatex">\(n\)</span> is even}\
+3n+1,&amp;\text{if <span class="arithmatex">\(n\)</span> is odd}
+\end{cases}
+$$</p>
+</blockquote>
+<h3 id="19">19、配置行高<a class="headerlink" href="#19" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  可以使用<code>\\[2ex]</code>语句替代该行末尾的<code>\\</code>来让编译器适配 , 其中<code>[ex]</code>指一个"X-Height" , 即x字母高度 , 也可以使用<code>[3ex]</code>或<code>[4ex]</code>等。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>$$
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>f(n)=
+</span><span id="__span-42-3"><a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>\begin{cases}
+</span><span id="__span-42-4"><a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>\dfrac n2,&amp;\text{if $n$ is even}\\[2ex]
+</span><span id="__span-42-5"><a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>3n+1,&amp;\text{if $n$ is odd}
+</span><span id="__span-42-6"><a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>\end{cases}\tag{适配[2ex]}
+</span><span id="__span-42-7"><a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>$$
+</span><span id="__span-42-8"><a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>***
+</span><span id="__span-42-9"><a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>
+</span><span id="__span-42-10"><a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>$$
+</span><span id="__span-42-11"><a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>f(n)=
+</span><span id="__span-42-12"><a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>\begin{cases}
+</span><span id="__span-42-13"><a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>\dfrac n2,&amp;\text{if $n$ is even}\\
+</span><span id="__span-42-14"><a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>3n+1,&amp;\text{if $n$ is odd}
+</span><span id="__span-42-15"><a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>\end{cases}\tag{不适配[2ex]}
+</span><span id="__span-42-16"><a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+f(n)=
+\begin{cases}
+\dfrac n2,&amp;\text{if <span class="arithmatex">\(n\)</span> is even}\[2ex]
+3n+1,&amp;\text{if <span class="arithmatex">\(n\)</span> is odd}
+\end{cases}\tag{适配[2ex]}
+$$</p>
+<hr>
+<div class="arithmatex">\[
+f(n)=
+\begin{cases}
+\dfrac n2,&amp;\text{if $n$ is even}\\
+3n+1,&amp;\text{if $n$ is odd}
+\end{cases}\tag{不适配[2ex]}
+\]</div>
+</blockquote>
+<h3 id="20">20、数组与表格<a class="headerlink" href="#20" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  数组与表格均以<code>\begin{array}</code>开头,并在其后定义列数及每一列的文本对齐方式,<code>c</code> <code>l</code> <code>r</code>分别代表居中、左对齐及右对齐。若要插入垂直分割线，在定义中插入<code>|</code>，若要插入水平分割线，在定义中加入<code>\hline</code>。</p>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>$$
+</span><span id="__span-43-2"><a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>\begin{array}{c|lcr}
+</span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>n&amp;\text{左对齐}&amp;\text{居中对齐}&amp;\text{右对齐}\\
+</span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>\hline
+</span><span id="__span-43-5"><a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>1&amp;0.24&amp;1&amp;125\\
+</span><span id="__span-43-6"><a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>2&amp;-1&amp;189&amp;-8\\
+</span><span id="__span-43-7"><a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>3&amp;-20&amp;2000&amp;1+10i
+</span><span id="__span-43-8"><a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>\end{array}
+</span><span id="__span-43-9"><a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\begin{array}{c|lcr}
+n&amp;\text{左对齐}&amp;\text{居中对齐}&amp;\text{右对齐}\
+\hline
+1&amp;0.24&amp;1&amp;125\
+2&amp;-1&amp;189&amp;-8\
+3&amp;-20&amp;2000&amp;1+10i
+\end{array}
+$$</p>
+</blockquote>
+<h3 id="21">21、嵌套表格或数组<a class="headerlink" href="#21" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>$$
+</span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>% outer vertical array of arrays 外层垂直表格
+</span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>\begin{array}{c}
+</span><span id="__span-44-4"><a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>% inner horizontal array of arrays 内层水平表格
+</span><span id="__span-44-5"><a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>\begin{array}{cc}
+</span><span id="__span-44-6"><a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>% inner array of minimum values 内层"最小值"数组
+</span><span id="__span-44-7"><a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>\begin{array}{c|cccc}
+</span><span id="__span-44-8"><a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>\text{min}&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-9"><a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>\hline
+</span><span id="__span-44-10"><a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>0&amp;0&amp;0&amp;0&amp;0\\
+</span><span id="__span-44-11"><a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>1&amp;0&amp;1&amp;1&amp;1\\
+</span><span id="__span-44-12"><a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>2&amp;0&amp;1&amp;2&amp;2\\
+</span><span id="__span-44-13"><a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>3&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-14"><a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a>\end{array}
+</span><span id="__span-44-15"><a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>&amp;
+</span><span id="__span-44-16"><a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a>% inner array of maximum values 内层"最大值"数组
+</span><span id="__span-44-17"><a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a>\begin{array}{c|cccc}
+</span><span id="__span-44-18"><a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>\text{max}&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-19"><a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a>\hline
+</span><span id="__span-44-20"><a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a>0&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-21"><a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>1&amp;1&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-22"><a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>2&amp;2&amp;2&amp;2&amp;3\\
+</span><span id="__span-44-23"><a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a>3&amp;3&amp;3&amp;3&amp;3
+</span><span id="__span-44-24"><a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a>\end{array}
+</span><span id="__span-44-25"><a id="__codelineno-44-25" name="__codelineno-44-25" href="#__codelineno-44-25"></a>\end{array}
+</span><span id="__span-44-26"><a id="__codelineno-44-26" name="__codelineno-44-26" href="#__codelineno-44-26"></a>% 内层第一行表格组结束
+</span><span id="__span-44-27"><a id="__codelineno-44-27" name="__codelineno-44-27" href="#__codelineno-44-27"></a>\\
+</span><span id="__span-44-28"><a id="__codelineno-44-28" name="__codelineno-44-28" href="#__codelineno-44-28"></a>% inner array of delta values 内层第二行Delta值数组
+</span><span id="__span-44-29"><a id="__codelineno-44-29" name="__codelineno-44-29" href="#__codelineno-44-29"></a>\begin{array}{c|cccc}
+</span><span id="__span-44-30"><a id="__codelineno-44-30" name="__codelineno-44-30" href="#__codelineno-44-30"></a>\Delta&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-31"><a id="__codelineno-44-31" name="__codelineno-44-31" href="#__codelineno-44-31"></a>\hline
+</span><span id="__span-44-32"><a id="__codelineno-44-32" name="__codelineno-44-32" href="#__codelineno-44-32"></a>0&amp;0&amp;1&amp;2&amp;3\\
+</span><span id="__span-44-33"><a id="__codelineno-44-33" name="__codelineno-44-33" href="#__codelineno-44-33"></a>1&amp;1&amp;0&amp;1&amp;2\\
+</span><span id="__span-44-34"><a id="__codelineno-44-34" name="__codelineno-44-34" href="#__codelineno-44-34"></a>2&amp;2&amp;1&amp;0&amp;1\\
+</span><span id="__span-44-35"><a id="__codelineno-44-35" name="__codelineno-44-35" href="#__codelineno-44-35"></a>3&amp;3&amp;2&amp;1&amp;0
+</span><span id="__span-44-36"><a id="__codelineno-44-36" name="__codelineno-44-36" href="#__codelineno-44-36"></a>\end{array}
+</span><span id="__span-44-37"><a id="__codelineno-44-37" name="__codelineno-44-37" href="#__codelineno-44-37"></a>% 内层第二行表格组结束
+</span><span id="__span-44-38"><a id="__codelineno-44-38" name="__codelineno-44-38" href="#__codelineno-44-38"></a>\end{array}
+</span><span id="__span-44-39"><a id="__codelineno-44-39" name="__codelineno-44-39" href="#__codelineno-44-39"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+% outer vertical array of arrays 外层垂直表格
+\begin{array}{c}
+% inner horizontal array of arrays 内层水平表格
+\begin{array}{cc}
+% inner array of minimum values 内层"最小值"数组
+\begin{array}{c|cccc}
+\text{min}&amp;0&amp;1&amp;2&amp;3\
+\hline
+0&amp;0&amp;0&amp;0&amp;0\
+1&amp;0&amp;1&amp;1&amp;1\
+2&amp;0&amp;1&amp;2&amp;2\
+3&amp;0&amp;1&amp;2&amp;3\
+\end{array}
+&amp;
+% inner array of maximum values 内层"最大值"数组
+\begin{array}{c|cccc}
+\text{max}&amp;0&amp;1&amp;2&amp;3\
+\hline
+0&amp;0&amp;1&amp;2&amp;3\
+1&amp;1&amp;1&amp;2&amp;3\
+2&amp;2&amp;2&amp;2&amp;3\
+3&amp;3&amp;3&amp;3&amp;3
+\end{array}
+\end{array}
+% 内层第一行表格组结束
+\
+% inner array of delta values 内层第二行Delta值数组
+\begin{array}{c|cccc}
+\Delta&amp;0&amp;1&amp;2&amp;3\
+\hline
+0&amp;0&amp;1&amp;2&amp;3\
+1&amp;1&amp;0&amp;1&amp;2\
+2&amp;2&amp;1&amp;0&amp;1\
+3&amp;3&amp;2&amp;1&amp;0
+\end{array}
+% 内层第二行表格组结束
+\end{array}
+$$</p>
+</blockquote>
+<h3 id="22">22、方程组<a class="headerlink" href="#22" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  使用<code>\begin{array}...\end{array}</code>和<code>\left\{...\right.</code>来创建一个方程组,或者你也可以使用条件表达式组<code>\begin{cases}...\end{cases}</code>来实现相同效果。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>$$
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>\left\{
+</span><span id="__span-45-3"><a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>\begin{array}{l}
+</span><span id="__span-45-4"><a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>a_1x+b_1y+c_1z=d_1\\
+</span><span id="__span-45-5"><a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>a_2x+b_2y+c_2z=d_2\\
+</span><span id="__span-45-6"><a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>a_3x+b_3y+c_1z=d_3
+</span><span id="__span-45-7"><a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>\end{array}
+</span><span id="__span-45-8"><a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>\right.
+</span><span id="__span-45-9"><a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>\quad\text{或者}\quad
+</span><span id="__span-45-10"><a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>\begin{cases}
+</span><span id="__span-45-11"><a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>a_1x+b_1y+c_1z=d_1\\
+</span><span id="__span-45-12"><a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>a_2x+b_2y+c_2z=d_2\\
+</span><span id="__span-45-13"><a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>a_3x+b_3y+c_1z=d_3
+</span><span id="__span-45-14"><a id="__codelineno-45-14" name="__codelineno-45-14" href="#__codelineno-45-14"></a>\end{cases}
+</span><span id="__span-45-15"><a id="__codelineno-45-15" name="__codelineno-45-15" href="#__codelineno-45-15"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\left{
+\begin{array}{l}
+a_1x+b_1y+c_1z=d_1\
+a_2x+b_2y+c_2z=d_2\
+a_3x+b_3y+c_1z=d_3
+\end{array}
+\right.
+\quad\text{或者}\quad
+\begin{cases}
+a_1x+b_1y+c_1z=d_1\
+a_2x+b_2y+c_2z=d_2\
+a_3x+b_3y+c_1z=d_3
+\end{cases}
+$$</p>
+</blockquote>
+<h3 id="23">23、连分式<a class="headerlink" href="#23" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  就像<code>\frac</code>一样,使用<code>\cfrac</code>或<code>\dfrac</code>来创建一个连分式,不要使用普通的<code>\frac</code>或<code>\over</code>来创建,否则看起来会<strong>很恶心</strong>。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>$$
+</span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>x=a_0+\cfrac{1^2}{a_1+\cfrac{2^2}{a_2+\cfrac{3^2}{a_3+\cfrac{4^2}{a_4+\cdots}}}}
+</span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+x=a_0+\cfrac{1<sup>2}{a_1+\cfrac{2</sup>2}{a_2+\cfrac{3<sup>2}{a_3+\cfrac{4</sup>2}{a_4+\cdots}}}}
+$$</p>
+<p>反例:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>x=a_0+\frac{1^2}{a_1+\frac{2^2}{a_2+\frac{3^2}{a_3+\frac{4^2}{a_4+\cdots}}}}
+</span></code></pre></div>
+<p>效果:
+$$
+x=a_0+\frac{1<sup>2}{a_1+\frac{2</sup>2}{a_2+\frac{3<sup>2}{a_3+\frac{4</sup>2}{a_4+\cdots}}}}
+$$</p>
+<p>补充:  当然,你可以使用<code>\frac</code>来表达连分数的<strong>紧缩记法</strong>。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>$$
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>x=a_0+\frac{1^2}{a_1+}\frac{2^2}{a_2+}\frac{3^2}{a_3+}\frac{4^2}{a_4+}\cdots
+</span><span id="__span-48-3"><a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+x=a_0+\frac{1<sup>2}{a_1+}\frac{2</sup>2}{a_2+}\frac{3<sup>2}{a_3+}\frac{4</sup>2}{a_4+}\cdots
+$$</p>
+</blockquote>
+<h3 id="24">24、交换图表<a class="headerlink" href="#24" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>说明:  使用一行<code>$\require{AMScd}$</code>语句来允许交换图表的显示,并通过在开头使用<code>\begin{CD}</code>,结尾使用<code>\end{CD}</code>来创建。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>$$
+</span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>\require{AMScd}
+</span><span id="__span-49-3"><a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>\begin{CD}
+</span><span id="__span-49-4"><a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>A@&gt;a&gt;&gt;B\\
+</span><span id="__span-49-5"><a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>@VbVV\# @VcVV\\
+</span><span id="__span-49-6"><a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a>C @&gt;&gt;d&gt; D
+</span><span id="__span-49-7"><a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>\end{CD}
+</span><span id="__span-49-8"><a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\require{AMScd}
+\begin{CD}
+A@&gt;a&gt;&gt;B\
+@V b V V# @VV c V\
+C @&gt;&gt;d&gt; D
+\end{CD}
+$$</p>
+<p>补充:  其中,<code>@&gt;&gt;&gt;</code>代表右箭头、<code>@&lt;&lt;&lt;</code>代表左箭头、<code>@VVV</code>代表下箭头、<code>@AAA</code>代表上箭头、<code>@=</code>代表水平双实线、<code>@|</code>代表竖直双实线、<code>@.</code>代表没有箭头。在<code>@&gt;&gt;&gt;</code>的<code>&gt;&gt;&gt;</code>之间任意插入文字即代表该箭头的注释文字。</p>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>$$
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>\begin{CD}
+</span><span id="__span-50-3"><a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a>A@&gt;&gt;&gt;B@&gt;{\text{very long label}}&gt;&gt;C\\
+</span><span id="__span-50-4"><a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a>@.@AAA@|\\
+</span><span id="__span-50-5"><a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a>D@=E@&lt;&lt;&lt;F
+</span><span id="__span-50-6"><a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a>\end{CD}
+</span><span id="__span-50-7"><a id="__codelineno-50-7" name="__codelineno-50-7" href="#__codelineno-50-7"></a>$$
+</span></code></pre></div>
+<p>效果:
+$$
+\begin{CD}
+A@&gt;&gt;&gt;B@&gt;{\text{very long label}}&gt;&gt;C\
+@.@AAA@|\
+D@=E@&lt;&lt;&lt;F
+\end{CD}
+$$</p>
+</blockquote>
+<h3 id="25">25、其他<a class="headerlink" href="#25" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<ul>
+<li>搜索<span class="arithmatex">\(\LaTeX\)</span></li>
+</ul>
+</blockquote>
+<h2 id="html">十四、支持的HTML元素<a class="headerlink" href="#html" title="点击此处可置顶内容">¶</a></h2>
+<h3 id="1_10">1、文本居中<a class="headerlink" href="#1_10" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>&lt;center&gt;内容&lt;/center&gt;
+</span></code></pre></div>
+<p>效果</p>
+<p></p><center>内容</center>
+</blockquote>
+<h3 id="2_9">2、快捷键显示<a class="headerlink" href="#2_9" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a>&lt;kbd&gt;内容&lt;/kbd&gt;
+</span></code></pre></div>
+<p>效果:
+<kbd>内容</kbd></p>
+</blockquote>
+<h3 id="3_6">3、加粗<a class="headerlink" href="#3_6" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>&lt;b&gt;加粗&lt;/b&gt;
+</span></code></pre></div>
+<p>效果:</p>
+<p><b>加粗</b></p>
+</blockquote>
+<h3 id="4_3">4、倾斜<a class="headerlink" href="#4_3" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a>&lt;i&gt;倾斜&lt;/i&gt;
+</span></code></pre></div>
+<p>效果:
+<i>倾斜</i></p>
+</blockquote>
+<h3 id="5_2">5、上下标<a class="headerlink" href="#5_2" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>开始&lt;sup&gt;123hi你好&lt;/sup&gt;
+</span><span id="__span-55-2"><a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>开始&lt;sub&gt;321hi你好&lt;/sub&gt;
+</span></code></pre></div>
+<p>效果:
+开始<sup>123hi你好</sup>
+开始<sub>321hi你好</sub></p>
+</blockquote>
+<h3 id="6_2">6、填充的黑色箭头<a class="headerlink" href="#6_2" title="点击此处可置顶内容">¶</a></h3>
+<blockquote>
+<p>代码：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>&amp;#x27A4;
+</span></code></pre></div>
+<p>效果：
+➤</p>
+</blockquote>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:①">
+<p>这是一个非常好用的框架。 <a class="footnote-backref" href="#fnref:%E2%91%A0" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/javascripts/titlechange.js"></script>
+      
+        <script src="../../assets/javascripts/glightbox.min.js"></script>
+      
+        <script src="../../assets/javascripts/click.js"></script>
+      
+        <script src="../../assets/javascripts/galaxy.js"></script>
+      
+    
+  </body>
+</html>
