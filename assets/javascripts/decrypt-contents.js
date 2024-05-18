@@ -118,12 +118,12 @@ function getItemName(key) {
 };
 /* save username/password to sessionStorage/localStorage */
 function setCredentials(username, password) {
-    sessionStorage.setItem('secretsite_credentials', JSON.stringify({'user': username, 'password': password}));
+    sessionStorage.setItem('encryptcontent_credentials', JSON.stringify({'user': username, 'password': password}));
 }
 
 /* try to get username/password from sessionStorage/localStorage */
 function getCredentials(username_input, password_input) {
-    const credentials = JSON.parse(sessionStorage.getItem('secretsite_credentials'));
+    const credentials = JSON.parse(sessionStorage.getItem('encryptcontent_credentials'));
     if (credentials && !encryptcontent_obfuscate) {
         if (credentials['user'] && username_input) {
             username_input.value = decodeURIComponent(credentials['user']);
@@ -139,7 +139,7 @@ function getCredentials(username_input, password_input) {
 
 /*remove username/password from localStorage */
 function delCredentials() {
-    sessionStorage.removeItem('secretsite_credentials');
+    sessionStorage.removeItem('encryptcontent_credentials');
 }
 
 /* Reload scripts src after decryption process */
