@@ -85,6 +85,5 @@ extra_javascript:
   - assets/javascripts/galaxy.js
 plugins:
   - search
-  - mkdocs-video
 theme:
   name: material
