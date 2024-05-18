@@ -819,8 +819,8 @@
                   
 
 
-<div><h1 id="ego-planner">ego-planner小白使用文档<a class="headerlink" href="#ego-planner" title="点击此处可置顶内容">¶</a></h1>
-<h2 id="px4-autopilot">PX4-Autopilot仿真构建<a class="headerlink" href="#px4-autopilot" title="点击此处可置顶内容">¶</a></h2>
+<h1 id="ego-planner">ego-planner小白使用文档<a class="headerlink" href="#ego-planner" title="点击此处可置顶内容">&para;</a></h1>
+<h2 id="px4-autopilot">PX4-Autopilot仿真构建<a class="headerlink" href="#px4-autopilot" title="点击此处可置顶内容">&para;</a></h2>
 <p>本教程是基于ubuntu20.04构建的，如果不是使用该版本的ubuntu请谨慎参考
 如果你还没有开始任何配置，跳转链接： <a href="https://gitee.com/pn_code/Fast-Drone-250" title="Fast-250-drone">Fast-250-drone</a>，如果你是第一次配置，请阅读以下注意事项.</p>
 <ul>
@@ -838,7 +838,7 @@
 <li>对于realsense-viewer的配置，需要改变BIOS的secure boot，设置为disabled，具体善用搜索</li>
 <li>对于plot-juggler的安装，请使用snap，具体善用搜索</li>
 </ul>
-<h3 id="px4-autopilot_1">PX4-Autopilot的安装<a class="headerlink" href="#px4-autopilot_1" title="点击此处可置顶内容">¶</a></h3>
+<h3 id="px4-autopilot_1">PX4-Autopilot的安装<a class="headerlink" href="#px4-autopilot_1" title="点击此处可置顶内容">&para;</a></h3>
 <ul>
 <li>请开启终端代理，不然会非常非常非常麻烦</li>
 <li>clash默认端口为7890，启动clash后在终端执行命令</li>
@@ -849,28 +849,28 @@
 <li>参考官方文档解决一切问题： <a href="https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html" title="PX4-Autopilot官方链接">PX4-Autopilot官方链接</a></li>
 <li>下载QGC</li>
 </ul>
-<h3 id="ego-planner_1">ego-planner仿真的配置<a class="headerlink" href="#ego-planner_1" title="点击此处可置顶内容">¶</a></h3>
+<h3 id="ego-planner_1">ego-planner仿真的配置<a class="headerlink" href="#ego-planner_1" title="点击此处可置顶内容">&para;</a></h3>
 <ul>
 <li>请跳转大佬up主的视频： <a href="https://www.bilibili.com/video/BV1mM4y1m7Vs/?spm_id_from=333.788&amp;vd_source=3003b3957d9f36fe37207e82b7d8fbdf" title="课程">ego-planner仿真</a> 从百度网盘（qaq）下载文件</li>
 <li>请复制我写的模型到合适的位置，注意由于版本问题，建议不要bash up主PX4-Autopilot中的文件，因为很可能之后就要重装了哈哈哈</li>
 <li>自己在第六七讲的文件下grep -rn iris_D435i一下，将这个改成iris</li>
 <li>之后就直接照着UP主的课程跑仿真吧，打工去吧年轻人（qaq）++</li>
 </ul>
-<h2 id="ego-planner_2">ego-planner代码使用<a class="headerlink" href="#ego-planner_2" title="点击此处可置顶内容">¶</a></h2>
+<h2 id="ego-planner_2">ego-planner代码使用<a class="headerlink" href="#ego-planner_2" title="点击此处可置顶内容">&para;</a></h2>
 <p>B站上有关于ego-planner框架的介绍，在此不赘述
-</p><div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target_type_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TARGET_TYPE</span><span class="o">::</span><span class="n">MANUAL_TARGET</span><span class="p">)</span>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target_type_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TARGET_TYPE</span><span class="o">::</span><span class="n">MANUAL_TARGET</span><span class="p">)</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="n">waypoint_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s">"/move_base_simple/goal"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">EGOReplanFSM</span><span class="o">::</span><span class="n">waypointCallback</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="p">);</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="n">waypoint_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s">&quot;/move_base_simple/goal&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">EGOReplanFSM</span><span class="o">::</span><span class="n">waypointCallback</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="p">);</span>
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">target_type_</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">TARGET_TYPE</span><span class="o">::</span><span class="n">PRESET_TARGET</span><span class="p">)</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="n">trigger_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s">"/traj_start_trigger"</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">EGOReplanFSM</span><span class="o">::</span><span class="n">triggerCallback</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="n">trigger_sub_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nh</span><span class="p">.</span><span class="n">subscribe</span><span class="p">(</span><span class="s">&quot;/traj_start_trigger&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">EGOReplanFSM</span><span class="o">::</span><span class="n">triggerCallback</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="p">);</span>
 </span></code></pre></div>
 特别注意<code>Fast-Drone-250/ src / planner / plan_manage / src / ego_replan_fsm.cpp</code>下的这段代码，前者是给死定点，后者是实时给点，自己去相应的文件中修改参数；
-如果要通过程序向<code>/move_base_simple/goal</code>发送期望位姿，请先弄清楚传播的是什么话题
-<h2 id="_1">实机飞行<a class="headerlink" href="#_1" title="点击此处可置顶内容">¶</a></h2>
+如果要通过程序向<code>/move_base_simple/goal</code>发送期望位姿，请先弄清楚传播的是什么话题</p>
+<h2 id="_1">实机飞行<a class="headerlink" href="#_1" title="点击此处可置顶内容">&para;</a></h2>
 <p>注意：
- 若使用realsense-camera,请将激光建图的地方用胶布贴起来</p></div>
+ 若使用realsense-camera,请将激光建图的地方用胶布贴起来</p>
 
 
 
