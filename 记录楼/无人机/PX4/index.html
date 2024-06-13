@@ -1066,10 +1066,10 @@
 <li>对于realsense-viewer的配置，需要改变BIOS的secure boot，设置为disabled，具体善用搜索</li>
 <li>文档中存在一个版本问题，需要将</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get install liblapack-dev libsuitesparse-dev libcxsparse3.1.2 libgflags-dev libgoogle-glog-dev libgtest-dev
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>liblapack-dev<span class="w"> </span>libsuitesparse-dev<span class="w"> </span>libcxsparse3.1.2<span class="w"> </span>libgflags-dev<span class="w"> </span>libgoogle-glog-dev<span class="w"> </span>libgtest-dev
 </span></code></pre></div>
 <p>更改为</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo apt-get install liblapack-dev libsuitesparse-dev libcxsparse3 libgflags-dev libgoogle-glog-dev libgtest-dev
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>liblapack-dev<span class="w"> </span>libsuitesparse-dev<span class="w"> </span>libcxsparse3<span class="w"> </span>libgflags-dev<span class="w"> </span>libgoogle-glog-dev<span class="w"> </span>libgtest-dev
 </span></code></pre></div>
 <ul>
 <li>对于realsense-viewer的配置，需要改变BIOS的secure boot，设置为disabled，具体善用搜索</li>
@@ -1080,7 +1080,7 @@
 <li>请开启终端代理，不然会非常非常非常麻烦</li>
 <li>clash默认端口为7890，启动clash后在终端执行命令</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>set https_proxy=http://127.0.0.1:7890;set http_proxy=http://127.0.0.1:7890;set all_proxy=socks5://127.0.0.1:7890
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">set</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:7890<span class="p">;</span><span class="nb">set</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:7890<span class="p">;</span><span class="nb">set</span><span class="w"> </span><span class="nv">all_proxy</span><span class="o">=</span>socks5://127.0.0.1:7890
 </span></code></pre></div>
 <ul>
 <li>参考官方文档解决一切问题： <a href="https://docs.px4.io/main/en/dev_setup/dev_env_linux_ubuntu.html" title="PX4-Autopilot官方链接">PX4-Autopilot官方链接</a></li>
