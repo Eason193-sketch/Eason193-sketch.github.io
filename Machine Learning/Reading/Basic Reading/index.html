@@ -649,9 +649,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bert" class="md-nav__link">
+  <a href="#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding" class="md-nav__link">
     <span class="md-ellipsis">
-      Bert
+      Bert: Pre-training of Deep Bidirectional Transformers for Language Understanding
     </span>
   </a>
   
@@ -1676,9 +1676,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bert" class="md-nav__link">
+  <a href="#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding" class="md-nav__link">
     <span class="md-ellipsis">
-      Bert
+      Bert: Pre-training of Deep Bidirectional Transformers for Language Understanding
     </span>
   </a>
   
@@ -1708,7 +1708,14 @@
 <p><strong>Theorem</strong> : <span class="arithmatex">\(D^*_G(x)=\frac{p_{data}(x)}{p_{data}(x)+p_{g}(x)}\)</span> , for fixed G; then take G into consideration, <span class="arithmatex">\(D^*_G(x)\)</span>​ can be minimized</p>
 <p><strong>Proposition</strong>: take <span class="arithmatex">\(p_g\)</span>​ as input, the function is still convex, which means it can reach the optimum.</p>
 <p><strong>Contribution</strong>: The loss function of unsupervised learning in the form of supervised learning.</p>
-<h2 id="bert">Bert<a class="headerlink" href="#bert" title="点击此处可置顶内容">&para;</a></h2>
+<h2 id="bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding"><a href="/Machine Learning/多模态/pdfs/Bert.pdf">Bert: Pre-training of Deep Bidirectional Transformers for Language Understanding</a><a class="headerlink" href="#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding" title="点击此处可置顶内容">&para;</a></h2>
+<p><strong>Idea</strong>:</p>
+<pre class="mermaid"><code>graph TD
+A[ELMo: Bidirectional RNN]--&gt;C[Bert: Birectional Transformer]
+B[GPT: Unidirectional Transformer]--&gt;C</code></pre>
+<p><strong>Mission</strong>:Pretraining + Fine-Tuning</p>
+<p><strong>Processing</strong>: Wordpiece + Embedding</p>
+<p><strong>Tasks</strong>:  masking trick(8:1:1) + sentence trick</p>
 
 
 
