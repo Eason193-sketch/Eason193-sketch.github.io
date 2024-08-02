@@ -657,6 +657,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vit" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mae" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moco" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOCO
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1684,6 +1711,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vit" class="md-nav__link">
+    <span class="md-ellipsis">
+      VIT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mae" class="md-nav__link">
+    <span class="md-ellipsis">
+      MAE
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moco" class="md-nav__link">
+    <span class="md-ellipsis">
+      MOCO
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1700,7 +1754,7 @@
 
 
 <h1 id="basic-reading"><a href="https://github.com/mli/paper-reading">Basic Reading</a><a class="headerlink" href="#basic-reading" title="点击此处可置顶内容">&para;</a></h1>
-<h2 id="generative-adversarial-nets"><a href="/Machine Learning/多模态/pdfs/GAN.pdf">Generative Adversarial Nets</a><a class="headerlink" href="#generative-adversarial-nets" title="点击此处可置顶内容">&para;</a></h2>
+<h2 id="generative-adversarial-nets"><a href="../pdfs/GAN.pdf">Generative Adversarial Nets</a><a class="headerlink" href="#generative-adversarial-nets" title="点击此处可置顶内容">&para;</a></h2>
 <p><strong>How GAN</strong>: G and D: Generative Model on noise x with output z, Detective model D to detect whether <span class="arithmatex">\(x^{unknown}\)</span>​ is faked by z</p>
 <p><strong>Object</strong>: make <span class="arithmatex">\(p_g\)</span> close to <span class="arithmatex">\(p_{data}\)</span>,where p is probability function</p>
 <p><strong>Loss function</strong>: <span class="arithmatex">\(min_Gmax_DV(D,G)=E_{x-p_{data}(X)}[logD(x)]+E_{z-p_z(z)}[log(1-D(G(z))]\)</span></p>
@@ -1708,7 +1762,7 @@
 <p><strong>Theorem</strong> : <span class="arithmatex">\(D^*_G(x)=\frac{p_{data}(x)}{p_{data}(x)+p_{g}(x)}\)</span> , for fixed G; then take G into consideration, <span class="arithmatex">\(D^*_G(x)\)</span>​ can be minimized</p>
 <p><strong>Proposition</strong>: take <span class="arithmatex">\(p_g\)</span>​ as input, the function is still convex, which means it can reach the optimum.</p>
 <p><strong>Contribution</strong>: The loss function of unsupervised learning in the form of supervised learning.</p>
-<h2 id="bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding"><a href="/Machine Learning/多模态/pdfs/Bert.pdf">Bert: Pre-training of Deep Bidirectional Transformers for Language Understanding</a><a class="headerlink" href="#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding" title="点击此处可置顶内容">&para;</a></h2>
+<h2 id="bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding"><a href="../pdfs/Bert.pdf">Bert: Pre-training of Deep Bidirectional Transformers for Language Understanding</a><a class="headerlink" href="#bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding" title="点击此处可置顶内容">&para;</a></h2>
 <p><strong>Idea</strong>:</p>
 <pre class="mermaid"><code>graph TD
 A[ELMo: Bidirectional RNN]--&gt;C[Bert: Birectional Transformer]
@@ -1716,6 +1770,12 @@ B[GPT: Unidirectional Transformer]--&gt;C</code></pre>
 <p><strong>Mission</strong>:Pretraining + Fine-Tuning</p>
 <p><strong>Processing</strong>: Wordpiece + Embedding</p>
 <p><strong>Tasks</strong>:  masking trick(8:1:1) + sentence trick</p>
+<h2 id="vit"><a href="../pdfs/VIT.pdf">VIT</a><a class="headerlink" href="#vit" title="点击此处可置顶内容">&para;</a></h2>
+<p>Patched pictures as sentences</p>
+<h2 id="mae"><a href="../pdfs/MAE.pdf">MAE</a><a class="headerlink" href="#mae" title="点击此处可置顶内容">&para;</a></h2>
+<p>Bert-like model in CV, Encoder working only on unmasked patches, decoder working on all patches</p>
+<h2 id="moco"><a href="../pdfs/MOCO.pdf">MOCO</a><a class="headerlink" href="#moco" title="点击此处可置顶内容">&para;</a></h2>
+<p>unsupervised, large and consistent  dictionaries, momentum refreshing enabled （queue)</p>
 
 
 

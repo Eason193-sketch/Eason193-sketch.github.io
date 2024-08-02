@@ -1641,6 +1641,13 @@
 <li><strong>Transformer参数多，需要强大的算力支持</strong>：CNN参数共享而Transformer没有，Transformer MLP部分参数较多</li>
 <li>优势：NLP也用transformer,因此可以将CV和NLP<strong>结合</strong>起来，多模态更加可行；但是纯CV场景还是用CNN，快且便宜</li>
 </ul>
+<p>论文阅读笔记：</p>
+<p>思想： 每个patch是一个词</p>
+<ol>
+<li>1-D的position embedding 足以完成相应的工作</li>
+<li>对于较大的图片，较复杂的模型，VIT的效果好于CNN，与两者结合的变体接近</li>
+<li>架构本身带来准确度</li>
+</ol>
 
 
 
