@@ -12,7 +12,7 @@
         <link rel="prev" href="../chapter%203/">
       
       
-        <link rel="next" href="../../%E5%AE%9E%E7%94%A8%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+        <link rel="next" href="../chapter%205/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-4" class="md-skip">
+        <a href="#chapter-4-mdp" class="md-skip">
           Skip to content
         </a>
       
@@ -697,6 +697,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 4
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -707,6 +718,94 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      价值迭代
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      策略迭代和价值迭代
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      学习MDP模型
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter%205/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter%206/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2163,6 +2262,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      价值迭代
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      策略迭代和价值迭代
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      学习MDP模型
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2176,8 +2310,22 @@
                   
 
 
-<h1 id="chapter-4">Chapter 4: 动态规划<a class="headerlink" href="#chapter-4" title="点击此处可置顶内容">&para;</a></h1>
-<p>（这部分略）</p>
+<h1 id="chapter-4-mdp">Chapter 4: 动态规划(白盒MDP)<a class="headerlink" href="#chapter-4-mdp" title="点击此处可置顶内容">&para;</a></h1>
+<p>(这部分略)</p>
+<h2 id="_1">价值迭代<a class="headerlink" href="#_1" title="点击此处可置顶内容">&para;</a></h2>
+<p>加速的greedy的方法</p>
+<p>策略收敛快于价值收敛，将价值看作中间变量</p>
+<p>价值迭代的中间table不一定合法，但是收敛结果合法，收敛快</p>
+<h2 id="_2">策略迭代和价值迭代<a class="headerlink" href="#_2" title="点击此处可置顶内容">&para;</a></h2>
+<p>策略迭代有明确意义，对于空间较小的MDP收敛快，但是使用Bellman等式更新价值函数代价很大</p>
+<p>价值迭代对空间较大的MDP更实用，是贪心更新算法</p>
+<p>没有状态转移循环，最好使用价值迭代</p>
+<p>对于深度强化学习使用策略</p>
+<h2 id="mdp">学习MDP模型<a class="headerlink" href="#mdp" title="点击此处可置顶内容">&para;</a></h2>
+<ul>
+<li>初始化<span class="arithmatex">\(\pi\)</span>后，P和R从经验中学习(<strong>相当于通过采样学习环境模型的P和R</strong>)，然后执行价值迭代，不断循环(迭代错误传递，因此效果不好)</li>
+<li>需要不使用MDP当中的动态规划的方法，直接学习<span class="arithmatex">\(\pi\)</span>和V，统称为<strong>Model-Free Reinforcement Learning</strong>无模型强化学习</li>
+</ul>
 
 
 
